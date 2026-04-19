@@ -1,42 +1,148 @@
-# sv
+# Polytopo Human
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A choice-driven identity narrative web game exploring how human identity is shaped by environment, upbringing, and context. Players make choices across life stages; the game builds a psychological and sociological profile from every decision.
 
-## Creating a project
+Built with SvelteKit 5, Tailwind CSS v4, and plain JSON — no backend.
 
-If you're seeing this, you've probably already done this step. Congrats!
+---
 
-```sh
-# create a new project
-npx sv create my-app
+## Concept
+
+Every choice you make accumulates trait scores across five opposing axes:
+
+| Axis          | ↔              |
+| ------------- | -------------- |
+| Otoritas      | Kebebasan      |
+| Kolektivisme  | Individualisme |
+| Spiritualitas | Rasionalisme   |
+| Tradisi       | Kemajuan       |
+| Konformitas   | Pemberontakan  |
+
+At the end, your accumulated scores resolve into one of eight identity archetypes — from *Pilar Desa* to *Jiwa Bebas* to *Sang Pencari*.
+
+Story stages are grounded in Indonesian cultural contexts: village politics, gotong royong, pengajian, family hierarchy, urban/rural tension, and religious identity.
+
+---
+
+## Stack
+
+- **SvelteKit 5** with Svelte 5 runes (`$state`, `$derived`, `$effect`)
+- **TypeScript** — strict mode, fully typed
+- **Tailwind CSS v4**
+- **localStorage + JSON** — no backend required
+
+---
+
+## Project Structure
+
+```text
+src/
+  lib/
+    engine/
+      gameEngine.ts         # node traversal, trait accumulation, session management
+      traitCalculator.ts    # pair balance, dominant trait scoring
+    stores/
+      gameStore.svelte.ts   # Svelte 5 runes-based singleton store + localStorage
+    data/
+      nodes/
+        childhood.json      # 12 nodes, Indonesian-grounded childhood stage
+      traits.json           # 10 trait definitions + 8 archetype profiles
+    types/
+      game.ts               # all TypeScript interfaces
+  routes/
+    +page.svelte            # main game view — narrative + choices + stage progress
+    summary/
+      +page.svelte          # profile reveal — trait bars, path replay, session export
+    +layout.svelte
+    layout.css
 ```
 
-To recreate this project with the same configuration:
+---
 
-```sh
-# recreate this project
-bun x sv@0.15.1 create --template minimal --types ts --add tailwindcss="plugins:typography,forms" mdsvex --install bun polytopo-human
+## Node Schema
+
+Content is fully decoupled from the engine. Add nodes to any JSON file and load them — no engine changes required.
+
+```json
+{
+  "id": "node_c001",
+  "stage": "childhood",
+  "text": "Narrative text here.",
+  "tags": ["keluarga", "komunitas"],
+  "choices": [
+    {
+      "id": "choice_c001a",
+      "text": "Choice text.",
+      "next": "node_c002",
+      "traits": { "authority": 1, "collectivism": 1 }
+    },
+    {
+      "id": "choice_c001b",
+      "text": "Another choice.",
+      "next": null,
+      "traits": { "freedom": 1, "individualism": 1 }
+    }
+  ],
+  "isEnding": false
+}
 ```
+
+`next: null` signals end of game and triggers the summary screen. Use `condition` on a choice to gate it behind a trait threshold:
+
+```json
+{
+  "condition": { "trait": "rationalism", "min": 3 }
+}
+```
+
+---
+
+## Session Export
+
+Every completed session can be exported as anonymized JSON for future aggregation:
+
+```json
+{
+  "sessionId": "uuid",
+  "startedAt": "ISO timestamp",
+  "completedAt": "ISO timestamp",
+  "pathTaken": ["node_c001", "node_c003", "node_c006"],
+  "choicesMade": ["choice_c001c", "choice_c003a", "choice_c006a"],
+  "finalTraits": { "individualism": 5, "freedom": 4, "progress": 3 },
+  "finalProfile": "Jiwa Bebas"
+}
+```
+
+---
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Requires Node.js ≥ 20.
 
 ```sh
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Type check:
 
-To create a production version of your app:
+```sh
+npm run check
+```
+
+Production build:
 
 ```sh
 npm run build
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+---
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Adding Content
+
+1. Add nodes to an existing `src/lib/data/nodes/*.json` or create a new stage file
+2. Load it in `gameStore.svelte.ts` via `engine.loadNodes(...)`
+3. Add new profiles to `traits.json` under `"profiles"`
+
+The engine handles everything else — no code changes needed for new narrative content.

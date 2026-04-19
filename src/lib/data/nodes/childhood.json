@@ -1,0 +1,262 @@
+[
+  {
+    "id": "node_c001",
+    "stage": "childhood",
+    "text": "Kamu berumur delapan tahun. Bapakmu adalah kepala dusun yang dihormati. Suatu sore, saat matahari hampir tenggelam di balik pohon pisang, Bapak memanggilmu dari beranda. \"Nak, ikut Bapak ke balai desa. Ada musyawarah soal irigasi sawah.\" Tapi kamu sudah berjanji dengan teman-temanmu untuk main layang-layang di lapangan.",
+    "tags": ["keluarga", "komunitas", "pilihan-pertama"],
+    "choices": [
+      {
+        "id": "choice_c001a",
+        "text": "Aku ikut Bapak. Musyawarah itu lebih penting.",
+        "next": "node_c002",
+        "traits": { "authority": 1, "collectivism": 1, "conformity": 1 }
+      },
+      {
+        "id": "choice_c001b",
+        "text": "Aku minta izin ke teman-teman dulu, baru ikut Bapak.",
+        "next": "node_c002",
+        "traits": { "collectivism": 1, "freedom": 1 }
+      },
+      {
+        "id": "choice_c001c",
+        "text": "Aku pergi main. Urusan orang dewasa bukan urusanku.",
+        "next": "node_c003",
+        "traits": { "individualism": 1, "freedom": 1, "rebellion": 1 }
+      }
+    ]
+  },
+  {
+    "id": "node_c002",
+    "stage": "childhood",
+    "text": "Di balai desa yang remang-remang, para tetua berdebat. Pak Sarno, petani tua dengan tangan kasar seperti kulit pohon, bersuara keras: \"Kalau irigasi itu dibangun, sawah saya yang paling terakhir dapat air!\" Pak RT bilang proyek ini untuk kebaikan bersama. Tiba-tiba semua mata beralih padamu — anak kecil satu-satunya di ruangan itu. Pak RT bertanya dengan tersenyum, \"Apa pendapatmu, nak?\"",
+    "tags": ["politik", "komunitas", "konflik"],
+    "choices": [
+      {
+        "id": "choice_c002a",
+        "text": "\"Irigasi harus dilanjutkan. Satu orang tidak boleh menghambat yang lain.\"",
+        "next": "node_c004",
+        "traits": { "collectivism": 2, "authority": 1 }
+      },
+      {
+        "id": "choice_c002b",
+        "text": "\"Pak Sarno punya kekhawatiran yang masuk akal. Harus ada solusi yang adil.\"",
+        "next": "node_c005",
+        "traits": { "freedom": 1, "progress": 1, "rationalism": 1 }
+      },
+      {
+        "id": "choice_c002c",
+        "text": "Aku diam. Bukan tempatku bicara di forum orang dewasa.",
+        "next": "node_c004",
+        "traits": { "conformity": 2, "tradition": 1 }
+      }
+    ]
+  },
+  {
+    "id": "node_c003",
+    "stage": "childhood",
+    "text": "Di lapangan, layang-layang merahmu meliuk-liuk di langit senja. Angin berhembus sempurna. Tapi Dito, temanmu yang paling nakal, tiba-tiba memotong benang layang-layang orang lain dengan sengaja. Layang-layang itu milik Iwan, anak kelas dua yang kecil, dan sekarang Iwan berdiri di sana sambil menangis melihat layang-layangnya hanyut dibawa angin.",
+    "tags": ["pertemanan", "moral", "konflik"],
+    "choices": [
+      {
+        "id": "choice_c003a",
+        "text": "Aku tegur Dito keras-keras. Itu tidak adil untuk Iwan.",
+        "next": "node_c006",
+        "traits": { "rebellion": 1, "freedom": 1, "progress": 1 }
+      },
+      {
+        "id": "choice_c003b",
+        "text": "Aku diam saja. Dito teman akrabku dan aku tidak mau ribut.",
+        "next": "node_c007",
+        "traits": { "conformity": 1, "collectivism": 1 }
+      },
+      {
+        "id": "choice_c003c",
+        "text": "Aku pergi mencari layang-layang Iwan yang jatuh tanpa kata-kata.",
+        "next": "node_c006",
+        "traits": { "individualism": 1, "freedom": 1, "progress": 1 }
+      }
+    ]
+  },
+  {
+    "id": "node_c004",
+    "stage": "childhood",
+    "text": "Pulang dari balai desa, Ibu sudah menyiapkan makan malam dengan nasi hangat dan tempe goreng. Setelah makan, Ibu mengajakmu ke pengajian anak-anak di surau kampung. Bu Ustadzah yang lembut bertanya, \"Hafalan suratmu sudah sampai mana, nak? Kita coba bersama, ya.\" Ruangan kecil itu wangi kemenyan dan penuh suara anak-anak mengulang ayat.",
+    "tags": ["agama", "keluarga", "pendidikan"],
+    "choices": [
+      {
+        "id": "choice_c004a",
+        "text": "Aku ikut dengan sepenuh hati. Agama adalah fondasi yang harus kukuasai.",
+        "next": "node_c008",
+        "traits": { "spirituality": 2, "tradition": 1, "conformity": 1 }
+      },
+      {
+        "id": "choice_c004b",
+        "text": "Aku hadir tapi pikiranku melayang ke buku ensiklopedi yang belum selesai kubaca.",
+        "next": "node_c009",
+        "traits": { "rationalism": 1, "individualism": 1 }
+      }
+    ]
+  },
+  {
+    "id": "node_c005",
+    "stage": "childhood",
+    "text": "Pak RT tersenyum mendengar pendapatmu. \"Kamu pinter, nak. Tapi anak kecil belum paham rumitnya urusan desa.\" Para tetua tertawa kecil. Bapak tampak bangga tapi juga sedikit canggung. Di perjalanan pulang, Bapak berkata pelan, \"Lain kali, di forum seperti itu, kita ikuti saja keputusan bersama dulu. Baru bicara empat mata setelahnya.\"",
+    "tags": ["keluarga", "otoritas", "identitas"],
+    "choices": [
+      {
+        "id": "choice_c005a",
+        "text": "Aku mengangguk. Bapak pasti lebih tahu cara-cara yang benar.",
+        "next": "node_c008",
+        "traits": { "authority": 1, "conformity": 1, "tradition": 1 }
+      },
+      {
+        "id": "choice_c005b",
+        "text": "Dalam hati aku tidak setuju, tapi aku diam dan menyimpan pendapatku.",
+        "next": "node_c009",
+        "traits": { "rebellion": 1, "individualism": 1, "rationalism": 1 }
+      }
+    ]
+  },
+  {
+    "id": "node_c006",
+    "stage": "childhood",
+    "text": "Dito melotot marah. \"Lebay lo!\" katanya, lalu pergi dengan sombong. Tapi Iwan menghampirimu dengan mata masih merah dan hidung berair. Tanpa kata, ia duduk di sebelahmu di bawah pohon mangga tua. Kalian duduk berdua sampai matahari hilang di balik atap rumah, bicara tentang layang-layang, mimpi, dan hal-hal yang tidak pernah Iwan ceritakan ke orang lain.",
+    "tags": ["pertemanan", "moral", "identitas"],
+    "choices": [
+      {
+        "id": "choice_c006a",
+        "text": "Persahabatan baru ini terasa jauh lebih nyata dari yang lama.",
+        "next": "node_c010",
+        "traits": { "individualism": 1, "freedom": 1, "progress": 1 }
+      },
+      {
+        "id": "choice_c006b",
+        "text": "Aku khawatir merusak kelompok. Mungkin harusnya aku tidak menegur Dito.",
+        "next": "node_c010",
+        "traits": { "conformity": 1, "collectivism": 1 }
+      }
+    ]
+  },
+  {
+    "id": "node_c007",
+    "stage": "childhood",
+    "text": "Kamu diam. Layang-layang terus bermain. Tapi di perjalanan pulang, bayangan Iwan yang menangis sendirian itu mengikutimu. Malam itu kamu tidak bisa tidur. Menatap langit-langit kamar yang gelap, kamu bertanya pada dirimu sendiri: mengapa aku diam? Apakah aku pengecut, atau memang begitu cara bergaul yang benar?",
+    "tags": ["moral", "identitas", "refleksi"],
+    "choices": [
+      {
+        "id": "choice_c007a",
+        "text": "Besok aku akan minta maaf pada Iwan dan bicara baik-baik dengan Dito.",
+        "next": "node_c010",
+        "traits": { "rebellion": 1, "progress": 1, "freedom": 1 }
+      },
+      {
+        "id": "choice_c007b",
+        "text": "Bukan salahku. Aku tidak melakukan apa-apa. Itu yang penting.",
+        "next": "node_c010",
+        "traits": { "conformity": 1, "individualism": 1 }
+      }
+    ]
+  },
+  {
+    "id": "node_c008",
+    "stage": "childhood",
+    "text": "Setelah pengajian, kamu menemukan Bapak duduk di beranda membaca Al-Quran dengan suara pelan. Cahaya lampu minyak membuatnya tampak seperti dari zaman lain — teguh dan tenang. Ia menoleh dan berkata tanpa basa-basi, \"Besok ada kerja bakti gotong royong benerin jalan desa. Kamu ikut, ya.\" Bukan pertanyaan — itu undangan yang tidak boleh ditolak.",
+    "tags": ["agama", "keluarga", "komunitas"],
+    "choices": [
+      {
+        "id": "choice_c008a",
+        "text": "\"Iya, Pak. Gotong royong itu kewajiban kita sebagai warga desa.\"",
+        "next": "node_c011",
+        "traits": { "collectivism": 2, "tradition": 1, "conformity": 1 }
+      },
+      {
+        "id": "choice_c008b",
+        "text": "\"Aku ingin ikut, tapi besok ada ujian sekolah, Pak. Boleh aku belajar dulu?\"",
+        "next": "node_c012",
+        "traits": { "rationalism": 1, "individualism": 1, "progress": 1 }
+      }
+    ]
+  },
+  {
+    "id": "node_c009",
+    "stage": "childhood",
+    "text": "Kamu menemukan ensiklopedi tua di rak buku Paman yang berkunjung — penuh gambar dinosaurus, diagram bintang, dan cara kerja mesin uap. Rasanya seperti menemukan pintu rahasia ke dunia lain. Kamu membacanya sampai larut malam di bawah selimut dengan senter kecil, sampai Ibu masuk dan mematikan lampumu. \"Tidur, nak. Buku itu tidak akan kemana-mana.\"",
+    "tags": ["pendidikan", "rasa-ingin-tahu", "identitas"],
+    "choices": [
+      {
+        "id": "choice_c009a",
+        "text": "Aku minta Paman membelikanku buku-buku serupa. Ini yang aku cari.",
+        "next": "node_c012",
+        "traits": { "rationalism": 2, "progress": 1, "individualism": 1 }
+      },
+      {
+        "id": "choice_c009b",
+        "text": "Aku simpan buku itu sebagai rahasia kecilku yang tidak perlu diketahui siapapun.",
+        "next": "node_c011",
+        "traits": { "individualism": 1, "freedom": 1, "rebellion": 1 }
+      }
+    ]
+  },
+  {
+    "id": "node_c010",
+    "stage": "childhood",
+    "text": "Musim kemarau datang panjang. Sumur-sumur di kampung mulai mengering. Pak RT mengumumkan sistem gilir pengambilan air yang ketat. Tapi beberapa tetangga mulai saling iri. Suatu malam, lewat dinding tipis kamarmu, kamu mendengar Ibu berbisik kepada Bapak: \"Keluarga Haji Umar ambil jatah air lebih dari yang seharusnya.\" Bapak hanya menghela napas panjang.",
+    "tags": ["komunitas", "konflik", "keadilan"],
+    "choices": [
+      {
+        "id": "choice_c010a",
+        "text": "Aku berpura-pura tidak mendengar. Ini bukan urusanku.",
+        "next": "node_c011",
+        "traits": { "conformity": 1, "tradition": 1 }
+      },
+      {
+        "id": "choice_c010b",
+        "text": "Keesokan harinya aku tanya Bapak mengapa tidak melaporkan ini ke Pak RT.",
+        "next": "node_c012",
+        "traits": { "progress": 1, "freedom": 1, "rationalism": 1 }
+      }
+    ]
+  },
+  {
+    "id": "node_c011",
+    "stage": "childhood",
+    "text": "Waktu berlalu. Kamu tumbuh menjadi anak yang dikenal penurut, sopan, dan disukai orang tua. Guru-guru memujamu di depan kelas. Tetangga sering berkata ke Ibu, \"Anakmu baik sekali, Bu.\" Tapi di malam-malam yang sunyi, ketika semua sudah tidur, ada sesuatu yang terasa seperti pertanyaan yang belum pernah kamu berani tanyakan — sesuatu yang tinggal diam di ujung lidahmu.",
+    "tags": ["identitas", "refleksi", "akhir-masa-kecil"],
+    "isEnding": true,
+    "choices": [
+      {
+        "id": "choice_c011a",
+        "text": "Pertanyaan itu bisa menunggu. Aku masih kecil, dan itu sudah cukup.",
+        "next": null,
+        "traits": { "tradition": 1, "conformity": 1 }
+      },
+      {
+        "id": "choice_c011b",
+        "text": "Suatu hari nanti, aku akan menemukan — dan menanyakan — jawabannya.",
+        "next": null,
+        "traits": { "progress": 1, "freedom": 1 }
+      }
+    ]
+  },
+  {
+    "id": "node_c012",
+    "stage": "childhood",
+    "text": "Kamu tumbuh sebagai anak yang selalu punya pertanyaan. \"Kenapa?\" adalah kata yang paling sering kamu ucapkan. Beberapa guru suka, beberapa lagi menganggapmu tidak sabaran dan terlalu lancang. Bapak pernah berkata dengan nada lelah, \"Anak yang terlalu banyak tanya bisa menyulitkan dirinya sendiri.\" Tapi Ibu hanya tersenyum dan berbisik, \"Rasa ingin tahu itu anugerah, bukan masalah.\"",
+    "tags": ["identitas", "pendidikan", "akhir-masa-kecil"],
+    "isEnding": true,
+    "choices": [
+      {
+        "id": "choice_c012a",
+        "text": "Mungkin Bapak benar. Bertanya terlalu banyak hanya akan membuatku kesulitan.",
+        "next": null,
+        "traits": { "authority": 1, "conformity": 1, "tradition": 1 }
+      },
+      {
+        "id": "choice_c012b",
+        "text": "Aku percaya Ibu. Pertanyaan-pertanyaanku adalah yang paling berharga dariku.",
+        "next": null,
+        "traits": { "rationalism": 1, "freedom": 1, "progress": 1, "rebellion": 1 }
+      }
+    ]
+  }
+]

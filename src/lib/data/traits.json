@@ -1,0 +1,132 @@
+{
+  "traits": [
+    {
+      "key": "authority",
+      "label": "Otoritas",
+      "opposite": "freedom",
+      "description": "Menghormati dan mendukung hierarki sosial",
+      "color": "#92400e"
+    },
+    {
+      "key": "freedom",
+      "label": "Kebebasan",
+      "opposite": "authority",
+      "description": "Mengutamakan otonomi dan ekspresi diri",
+      "color": "#ea580c"
+    },
+    {
+      "key": "collectivism",
+      "label": "Kolektivisme",
+      "opposite": "individualism",
+      "description": "Mendahulukan kepentingan komunitas",
+      "color": "#15803d"
+    },
+    {
+      "key": "individualism",
+      "label": "Individualisme",
+      "opposite": "collectivism",
+      "description": "Mengutamakan kebutuhan dan pilihan pribadi",
+      "color": "#1d4ed8"
+    },
+    {
+      "key": "spirituality",
+      "label": "Spiritualitas",
+      "opposite": "rationalism",
+      "description": "Mencari makna melalui iman dan kepercayaan",
+      "color": "#7e22ce"
+    },
+    {
+      "key": "rationalism",
+      "label": "Rasionalisme",
+      "opposite": "spirituality",
+      "description": "Mengutamakan logika dan bukti empiris",
+      "color": "#0e7490"
+    },
+    {
+      "key": "tradition",
+      "label": "Tradisi",
+      "opposite": "progress",
+      "description": "Menghargai warisan dan cara-cara lama",
+      "color": "#a16207"
+    },
+    {
+      "key": "progress",
+      "label": "Kemajuan",
+      "opposite": "tradition",
+      "description": "Mendorong perubahan dan inovasi",
+      "color": "#16a34a"
+    },
+    {
+      "key": "conformity",
+      "label": "Konformitas",
+      "opposite": "rebellion",
+      "description": "Menyesuaikan diri dengan norma sosial",
+      "color": "#475569"
+    },
+    {
+      "key": "rebellion",
+      "label": "Pemberontakan",
+      "opposite": "conformity",
+      "description": "Menantang aturan dan status quo",
+      "color": "#be123c"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "village_pillar",
+      "name": "Pilar Desa",
+      "archetype": "The Village Pillar",
+      "description": "Kamu adalah perekat komunitas. Kamu hidup untuk orang lain, menjaga tradisi, dan memastikan harmoni tetap terjaga. Orang-orang mengandalkanmu — dan kamu menerimanya dengan lapang dada dan penuh rasa syukur.",
+      "dominantTraits": ["authority", "collectivism", "tradition", "conformity"]
+    },
+    {
+      "id": "free_spirit",
+      "name": "Jiwa Bebas",
+      "archetype": "The Free Spirit",
+      "description": "Kamu tidak mudah dikurung oleh ekspektasi orang lain. Hidupmu adalah eksperimenmu sendiri. Kamu percaya bahwa jalan yang tidak diikuti orang banyak seringkali yang paling bermakna — meski harus kamu buka sendiri.",
+      "dominantTraits": ["freedom", "individualism", "rebellion", "progress"]
+    },
+    {
+      "id": "devout_servant",
+      "name": "Hamba yang Ikhlas",
+      "archetype": "The Devout Servant",
+      "description": "Iman adalah kompas hidupmu. Setiap keputusan kamu timbang dengan nilai-nilai spiritual yang mengakar. Kamu menemukan ketenangan sejati dalam ibadah, pengabdian, dan kepasrahan yang tulus.",
+      "dominantTraits": ["spirituality", "conformity", "tradition", "collectivism"]
+    },
+    {
+      "id": "modern_thinker",
+      "name": "Pemikir Modern",
+      "archetype": "The Modern Thinker",
+      "description": "Kamu percaya pada kekuatan akal dan data. Kamu mempertanyakan hal yang sudah ada dan mendorong perubahan berdasarkan bukti dan logika — bukan sekadar kebiasaan atau rasa nyaman.",
+      "dominantTraits": ["rationalism", "progress", "individualism", "freedom"]
+    },
+    {
+      "id": "quiet_rebel",
+      "name": "Pemberontak Sunyi",
+      "archetype": "The Quiet Rebel",
+      "description": "Kamu tidak selalu bersuara keras, tapi pikiranmu jarang sejalan dengan arus. Kamu bertanya ketika orang lain diam, dan merasa gelisah ketika semua orang terlalu mudah sepakat.",
+      "dominantTraits": ["rebellion", "individualism", "freedom", "rationalism"]
+    },
+    {
+      "id": "bridge_builder",
+      "name": "Jembatan Antar Dunia",
+      "archetype": "The Bridge Builder",
+      "description": "Kamu hidup di persimpangan — antara tradisi dan modernitas, antara iman dan akal, antara dirimu dan komunitasmu. Kamu tidak memilih satu sisi; kamu mencoba memahami semua, dan menjadi penghubungnya.",
+      "dominantTraits": ["collectivism", "rationalism", "progress", "tradition"]
+    },
+    {
+      "id": "guardian",
+      "name": "Sang Penjaga",
+      "archetype": "The Guardian",
+      "description": "Kamu menjaga apa yang sudah ada — bukan karena takut berubah, tapi karena kamu tahu nilai dari hal yang telah teruji waktu. Stabilitasmu adalah kekuatan dan pegangan bagi semua orang di sekitarmu.",
+      "dominantTraits": ["tradition", "authority", "conformity", "collectivism"]
+    },
+    {
+      "id": "seeker",
+      "name": "Sang Pencari",
+      "archetype": "The Seeker",
+      "description": "Kamu belum menemukan jawabanmu — dan itu bukan kelemahan, melainkan tanda kejujuranmu. Kamu terus bergerak, terus bertanya, terus membuka diri pada kemungkinan-kemungkinan baru. Perjalananmu belum selesai.",
+      "dominantTraits": ["spirituality", "progress", "individualism", "rationalism"]
+    }
+  ]
+}

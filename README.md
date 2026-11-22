@@ -151,13 +151,28 @@ npm run preview
 
 ## Stories
 
-Besides the original village story, the game includes stories from Bugis Sulawesi, Peranakan Semarang, a Deaf child in Jakarta, Flores, Pattani (Thailand), a Jakarta riverbank settlement, Dayak Kaharingan Kalimantan, Tamil Malaysia and a Mexican-American family in Texas. All content is in Indonesian.
+Besides the original village story, the game includes stories from Bugis Sulawesi, Peranakan Semarang, a Deaf child in Jakarta, Flores, Pattani (Thailand), a Jakarta riverbank settlement, Dayak Kaharingan Kalimantan, Tamil Malaysia and a Mexican-American family in Texas. Indonesian is the default; every story, profile and UI string also has an English translation.
+
+## Languages
+
+The game supports Indonesian (`id`, default) and English (`en`). The language comes from the saved choice, otherwise the browser language, and can be switched with the toggle on every page. The choice is stored in `localStorage`, and `<html lang>` follows it.
+
+- Indonesian text lives in the node files; English text lives in parallel files keyed by the same ids:
+  `src/lib/data/en/nodes/<story>.json` (`{ "<nodeId>": { "text": "...", "choices": { "<choiceId>": "..." } } }`),
+  plus `en/stories.json`, `en/profiles.json`, `en/traits.json`, `en/tags.json`.
+- UI strings are in `src/lib/i18n/ui.ts`.
+- Session exports always use the canonical Indonesian profile name.
+
+### Adding a translation
+
+Add the matching entries under `src/lib/data/en/` (same node and choice ids, same structure) and run `npm run validate`. It fails on any missing translation or structural mismatch. To add a new language, add it to `ui.ts` and add a parallel data folder.
 
 ## Adding Content
 
 1. Add a new `src/lib/data/nodes/<story>.json` (all files in that folder are loaded automatically)
 2. Register it in `src/lib/data/stories.json` with its start node
-3. Run `npm run validate`
-4. Add new profiles to `traits.json` under `"profiles"`
+3. Add the English text under `src/lib/data/en/` (see Languages)
+4. Run `npm run validate`
+5. Add new profiles to `traits.json` under `"profiles"`
 
 The engine handles everything else — no code changes needed for new narrative content.

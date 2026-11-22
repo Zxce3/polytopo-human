@@ -50,7 +50,7 @@ export const UI = {
 			'A choice-driven narrative game about how environment, upbringing, and context shape human identity.',
 		ogDescription: 'A choice-driven narrative game about how human identity is formed.',
 		pageDescription: 'A narrative journey about human identity.',
-		stages: { childhood: 'Childhood', youth: 'Youth', adult: 'Adulthood', elder: 'Elder years' },
+		stages: { childhood: 'Childhood', youth: 'Youth', adult: 'Adulthood', elder: 'Elder' },
 		choicesCount: (n: number) => (n === 1 ? '1 choice' : `${n} choices`),
 		chooseStory: 'choose a story',
 		restart: 'restart',

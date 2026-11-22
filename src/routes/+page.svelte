@@ -89,8 +89,8 @@
 							style="background:{i <= stageIndex ? 'var(--glow)' : '#44403c'};opacity:{i === stageIndex ? 1 : i < stageIndex ? 0.5 : 0.7}"
 						></span>
 						<span
-							class="text-[10px] uppercase tracking-[0.18em] transition-colors duration-700
-								{i === stageIndex ? 'text-stone-200' : 'text-stone-500'}"
+							class="text-[9px] sm:text-[10px] uppercase tracking-[0.08em] sm:tracking-[0.18em] whitespace-nowrap transition-colors duration-700
+								{i === stageIndex ? 'text-stone-50' : 'text-stone-400'}"
 						>
 							{langStore.t.stages[stg]}
 						</span>
@@ -125,7 +125,7 @@
 							<button
 								type="button"
 								onclick={skip}
-								class="mb-6 text-[10px] uppercase tracking-[0.2em] text-stone-500 hover:text-stone-200
+								class="mb-6 text-[10px] uppercase tracking-[0.2em] text-stone-400 hover:text-stone-200
 									focus-visible:text-stone-200 px-1 py-2"
 							>
 								{langStore.t.skip}
@@ -135,7 +135,7 @@
 						{#if node.tags?.length}
 							<div class="flex flex-wrap gap-2 mb-8" class:hidden={!ready}>
 								{#each node.tags as tag}
-									<span class="text-[10px] uppercase tracking-widest text-stone-500 border border-stone-800 px-2 py-0.5 font-sans">
+									<span class="text-[10px] uppercase tracking-widest text-stone-400 border border-stone-800 px-2 py-0.5 font-sans">
 										{tag}
 									</span>
 								{/each}
@@ -156,7 +156,7 @@
 										class:faded={chosen !== null && chosen !== choice.id}
 										style="animation-delay:{reduced ? 0 : i * 0.12}s"
 									>
-										<span class="font-mono text-xs text-stone-500 group-hover:text-stone-300 pt-0.5">{i + 1}</span>
+										<span class="font-mono text-xs text-stone-400 group-hover:text-stone-100 pt-0.5">{i + 1}</span>
 										<span>{choice.text}</span>
 									</button>
 								{/each}
@@ -169,9 +169,9 @@
 	</main>
 
 	<footer class="px-6 pb-7 select-none">
-		<div class="max-w-[38rem] mx-auto flex flex-wrap justify-between items-center gap-x-4 gap-y-2 text-[10px] uppercase tracking-[0.2em] text-stone-500">
+		<div class="max-w-[38rem] mx-auto flex flex-wrap justify-between items-center gap-x-4 gap-y-2 text-[10px] uppercase tracking-[0.2em] text-stone-400">
 			<span>{langStore.t.choicesCount(gameStore.session.choicesMade.length)}</span>
-			<div class="flex items-center gap-4">
+			<div class="flex flex-wrap items-center gap-x-4 gap-y-0 whitespace-nowrap">
 				<SoundControl />
 				<LangToggle />
 				<a href="/stories" class="py-2 hover:text-stone-200 focus-visible:text-stone-200">{langStore.t.chooseStory}</a>

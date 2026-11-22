@@ -46,7 +46,8 @@ class SoundStore {
 		if (s.on) {
 			// autoplay policy: wait for the first gesture, then resume the saved preference
 			this.armed = true;
-			const go = () => {
+			const go = (e: Event) => {
+				if ((e.target as Element | null)?.closest?.('[data-sound-control]')) return; // the toggle handles itself
 				removeEventListener('pointerdown', go);
 				removeEventListener('keydown', go);
 				if (this.armed) void this.enable();
@@ -70,8 +71,7 @@ class SoundStore {
 
 	/** Call directly from a click handler so the AudioContext may start. */
 	async toggle(): Promise<void> {
-		if (this.on || this.armed) {
-			this.armed = false;
+		if (this.on) {
 			this.on = false;
 			ambient.stop();
 			this.save(false);

@@ -3,13 +3,13 @@
 	import { langStore } from '$lib/i18n/lang.svelte';
 </script>
 
-<div class="flex items-center gap-3">
+<div class="flex items-center gap-3" data-sound-control>
 	<button
 		type="button"
 		onclick={() => soundStore.toggle()}
 		aria-pressed={soundStore.on}
 		title={langStore.t.soundHint}
-		class="py-2 hover:text-stone-200 focus-visible:text-stone-200"
+		class="py-2 whitespace-nowrap hover:text-stone-200 focus-visible:text-stone-200"
 	>
 		{soundStore.on ? langStore.t.soundOff : langStore.t.soundOn}
 	</button>

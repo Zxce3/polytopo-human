@@ -62,7 +62,7 @@
 
 <div class="stage min-h-screen text-stone-100 px-6 py-12 sm:py-16" style={themeStyle(gameStore.currentStory?.id)}>
 	<div class="scene max-w-[38rem] mx-auto">
-		<div class="flex justify-end items-center gap-4 mb-6 text-[10px] uppercase tracking-[0.2em] text-stone-500"><SoundControl /><LangToggle /></div>
+		<div class="flex justify-end items-center gap-4 mb-6 text-[10px] uppercase tracking-[0.2em] text-stone-400"><SoundControl /><LangToggle /></div>
 
 		<div class="mb-12">
 			<p class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-4 font-sans">
@@ -77,7 +77,7 @@
 
 		<div class="mb-16">
 			<AmbientShape traits={gameStore.session.traits} label={langStore.t.shapeLabel} />
-			<p class="text-center text-[11px] text-stone-500 font-sans mt-2">{langStore.t.shapeLabel}</p>
+			<p class="text-center text-[11px] text-stone-400 font-sans mt-2">{langStore.t.shapeLabel}</p>
 		</div>
 
 		<div class="mb-16">
@@ -87,8 +87,8 @@
 					{@const [a, b] = pair}
 					<div>
 						<div class="flex justify-between text-[11px] uppercase tracking-widest mb-2.5 font-sans">
-							<span class={dominant === a ? 'text-stone-100' : 'text-stone-500'}>{getTraitLabel(a)}</span>
-							<span class={dominant === b ? 'text-stone-100' : 'text-stone-500'}>{getTraitLabel(b)}</span>
+							<span class={dominant === a ? 'text-stone-100' : 'text-stone-400'}>{getTraitLabel(a)}</span>
+							<span class={dominant === b ? 'text-stone-100' : 'text-stone-400'}>{getTraitLabel(b)}</span>
 						</div>
 						<div class="h-px bg-stone-800 relative" role="presentation">
 							<div class="absolute top-0 left-0 h-full transition-all duration-1000 ease-out" style="width:{leftWidth}%;background:var(--glow)"></div>
@@ -104,14 +104,14 @@
 			<ol class="space-y-4 border-l border-stone-800 pl-5">
 				{#each gameStore.journey as step}
 					<li class="font-serif text-[1.02rem] leading-relaxed text-stone-300">
-						<span class="block text-[10px] uppercase tracking-[0.18em] text-stone-500 font-sans mb-1">
+						<span class="block text-[10px] uppercase tracking-[0.18em] text-stone-400 font-sans mb-1">
 							{langStore.t.stages[step.stage as keyof typeof langStore.t.stages]}
 						</span>
 						{step.text}
 					</li>
 				{/each}
 			</ol>
-			<div class="mt-6 flex flex-wrap gap-x-6 gap-y-1 text-[11px] text-stone-500 font-sans">
+			<div class="mt-6 flex flex-wrap gap-x-6 gap-y-1 text-[11px] text-stone-400 font-sans">
 				<span>{langStore.t.choicesMade(gameStore.session.choicesMade.length)}</span>
 				<span>{langStore.t.started} {fmt(gameStore.session.startedAt)}</span>
 				{#if gameStore.session.completedAt}

@@ -1,0 +1,200 @@
+[
+  {
+    "id": "node_prk001",
+    "stage": "childhood",
+    "text": "Kamu sepuluh tahun, tinggal di barisan rumah pekerja di perkebunan karet di Perak, Malaysia. Ayahmu menyadap getah sebelum fajar. Pada Deepavali, ibumu menyalakan pelita dan Pak Hassan, mandor Melayu, datang membawa kuih. Di sekolah Tamil kecil, gurumu berkata murid-murid harus belajar Bahasa Melayu dan Inggris agar bisa maju.",
+    "tags": [
+      "keluarga",
+      "bahasa",
+      "perkebunan"
+    ],
+    "choices": [
+      {
+        "id": "choice_prk001a",
+        "text": "Aku belajar Bahasa Melayu dan Inggris sungguh-sungguh agar bisa kuliah.",
+        "next": "node_prk002",
+        "traits": {
+          "progress": 2,
+          "individualism": 1
+        }
+      },
+      {
+        "id": "choice_prk001b",
+        "text": "Aku tetap fokus pada Tamil. Itu bahasa ibu dan doa kami.",
+        "next": "node_prk003",
+        "traits": {
+          "tradition": 2,
+          "spirituality": 1,
+          "collectivism": 1
+        }
+      },
+      {
+        "id": "choice_prk001c",
+        "text": "Aku bantu ayah di kebun getah hari Sabtu supaya ia tidak kerja sendirian.",
+        "next": "node_prk003",
+        "traits": {
+          "collectivism": 2,
+          "conformity": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_prk002",
+    "stage": "youth",
+    "text": "Gurumu, Cikgu Lakshmi, membawamu mengikuti lomba pidato tiga bahasa. Kamu gugup, tetapi sorak teman-teman membuatmu berani. Di sekolah menengah yang lebih besar, ada pelajar dari banyak etnis. Kamu merasa menjadi jembatan sekaligus orang luar.",
+    "tags": [
+      "sekolah",
+      "bahasa",
+      "identitas"
+    ],
+    "choices": [
+      {
+        "id": "choice_prk002a",
+        "text": "Aku mencari teman dari semua latar dan belajar budaya mereka.",
+        "next": "node_prk004",
+        "traits": {
+          "collectivism": 1,
+          "freedom": 1,
+          "progress": 1
+        }
+      },
+      {
+        "id": "choice_prk002b",
+        "text": "Aku bergabung dengan kelompok sesama keturunan India karena terasa aman.",
+        "next": "node_prk004",
+        "traits": {
+          "collectivism": 1,
+          "tradition": 1,
+          "conformity": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_prk003",
+    "stage": "youth",
+    "text": "Perkebunan dijual untuk perumahan. Keluarga diberi waktu setahun untuk pindah. Ayah sudah tiga puluh tahun menyadap getah. Ia diam di depan pohon karet dan tidak tahu harus ke mana. Pelita Deepavali tahun itu terasa lebih terang dan lebih sunyi.",
+    "tags": [
+      "kehilangan",
+      "pindah",
+      "kelas"
+    ],
+    "choices": [
+      {
+        "id": "choice_prk003a",
+        "text": "Aku bantu ayah mencari rumah dan pekerjaan baru di kota.",
+        "next": "node_prk004",
+        "traits": {
+          "collectivism": 2,
+          "authority": 1
+        }
+      },
+      {
+        "id": "choice_prk003b",
+        "text": "Aku ikut warga memprotes dan menuntut kompensasi yang adil.",
+        "next": "node_prk004",
+        "traits": {
+          "rebellion": 2,
+          "collectivism": 1,
+          "rationalism": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_prk004",
+    "stage": "adult",
+    "text": "Keluarga pindah ke rumah susun di pinggiran Ipoh. Kamu lulus ujian dan mendapat tempat kuliah di universitas, tetapi biaya dan jarak menjadi kendala. Seorang kerabat menawarkan pekerjaan stabil di toko miliknya di Singapura.",
+    "tags": [
+      "pendidikan",
+      "migrasi",
+      "pilihan"
+    ],
+    "choices": [
+      {
+        "id": "choice_prk004a",
+        "text": "Aku kuliah dengan pinjaman, meski berat.",
+        "next": "node_prk005",
+        "traits": {
+          "progress": 2,
+          "individualism": 1,
+          "rationalism": 1
+        }
+      },
+      {
+        "id": "choice_prk004b",
+        "text": "Aku pergi bekerja ke Singapura dan mengirim uang untuk keluarga.",
+        "next": "node_prk006",
+        "traits": {
+          "collectivism": 2,
+          "conformity": 1,
+          "progress": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_prk005",
+    "stage": "elder",
+    "text": "Kamu lulus sebagai insinyur sipil dan merancang perumahan terjangkau di bekas tanah perkebunan. Setiap Thaipusam kamu kembali ke kuil dan merasa dunia dulu dan sekarang bertemu. Kamu bertanya apakah kamu membangun rumah bagi orang seperti keluargamu atau menghapus jejaknya.",
+    "tags": [
+      "pembangunan",
+      "ingatan"
+    ],
+    "choices": [
+      {
+        "id": "choice_prk005a",
+        "text": "Aku jadikan proyek itu ruang bagi keluarga pekerja.",
+        "next": null,
+        "traits": {
+          "collectivism": 2,
+          "progress": 1,
+          "tradition": 1
+        }
+      },
+      {
+        "id": "choice_prk005b",
+        "text": "Aku menulis tentang sejarah perkebunan agar tidak dilupakan.",
+        "next": null,
+        "traits": {
+          "rationalism": 1,
+          "rebellion": 1,
+          "tradition": 1
+        }
+      }
+    ],
+    "isEnding": true
+  },
+  {
+    "id": "node_prk006",
+    "stage": "elder",
+    "text": "Di Singapura kamu bekerja bertahun-tahun, mengirim uang, dan menyimpan resep ibu di buku kecil. Kamu kembali ke Perak saat ayah tua, dan menemukan bahwa pohon karet terakhir di kebun lama masih berdiri. Kamu duduk di bawahnya dengan perasaan yang tak punya satu nama.",
+    "tags": [
+      "pulang",
+      "kehilangan",
+      "ingatan"
+    ],
+    "choices": [
+      {
+        "id": "choice_prk006a",
+        "text": "Aku tinggal dan merawat orang tua. Aku mulai lagi di kampung.",
+        "next": null,
+        "traits": {
+          "collectivism": 2,
+          "tradition": 2
+        }
+      },
+      {
+        "id": "choice_prk006b",
+        "text": "Aku tetap kembali ke Singapura. Tempat itu kini juga rumahku.",
+        "next": null,
+        "traits": {
+          "individualism": 1,
+          "progress": 1
+        }
+      }
+    ],
+    "isEnding": true
+  }
+]

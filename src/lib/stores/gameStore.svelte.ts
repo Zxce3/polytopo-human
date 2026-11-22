@@ -3,14 +3,18 @@ import { goto } from '$app/navigation';
 import { GameEngine } from '$lib/engine/gameEngine';
 import type { GameSession, GameNode, ProfileDefinition } from '$lib/types/game';
 
-import childhoodData from '$lib/data/nodes/childhood.json';
+import storiesData from '$lib/data/stories.json';
 import traitsData from '$lib/data/traits.json';
 
 const STORAGE_KEY = 'polytopo_session';
 const START_NODE = 'node_c001';
 
 const engine = new GameEngine();
-engine.loadNodes(childhoodData as GameNode[]);
+const nodeModules = import.meta.glob<GameNode[]>('$lib/data/nodes/*.json', {
+	eager: true,
+	import: 'default',
+});
+for (const nodes of Object.values(nodeModules)) engine.loadNodes(nodes);
 engine.loadProfiles(traitsData.profiles as ProfileDefinition[]);
 
 function loadPersistedSession(): GameSession | null {
@@ -75,6 +79,10 @@ class GameStore {
 		}
 	}
 
+	startStory(startNodeId: string): void {
+		this.session = engine.createSession(startNodeId);
+	}
+
 	reset(): void {
 		this.session = engine.createSession(START_NODE);
 		if (browser) localStorage.removeItem(STORAGE_KEY);
@@ -90,5 +98,6 @@ class GameStore {
 	}
 }
 
+export const stories: { id: string; title: string; premise: string; start: string }[] = storiesData;
 export const gameStore = new GameStore();
 export { engine };

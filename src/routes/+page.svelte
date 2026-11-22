@@ -96,6 +96,13 @@
 			<span class="text-[9px] uppercase tracking-[0.2em] text-stone-800">
 				{gameStore.session.choicesMade.length} pilihan
 			</span>
+			<a
+				href="/stories"
+				class="text-[9px] uppercase tracking-[0.2em] text-stone-700
+					hover:text-stone-500 transition-colors duration-200"
+			>
+				pilih kisah
+			</a>
 			<button
 				onclick={() => gameStore.reset()}
 				class="text-[9px] uppercase tracking-[0.2em] text-stone-800

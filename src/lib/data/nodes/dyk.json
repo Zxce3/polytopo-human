@@ -1,0 +1,200 @@
+[
+  {
+    "id": "node_dyk001",
+    "stage": "childhood",
+    "text": "Kamu dua belas tahun, tinggal di desa tepi Sungai Kahayan. Keluargamu menganut Kaharingan, kepercayaan leluhur Dayak Ngaju. Kakekmu baru meninggal, dan keluarga bersiap untuk upacara tiwah beberapa tahun lagi. Di sekolah, kolom agama di rapor hanya memuat enam pilihan, dan Kaharingan tercatat sebagai 'Hindu'. Kamu bertanya kenapa.",
+    "tags": [
+      "kepercayaan",
+      "adat",
+      "administrasi"
+    ],
+    "choices": [
+      {
+        "id": "choice_dyk001a",
+        "text": "Aku tanya Bapak. Aku ingin tahu mengapa nama kepercayaan kita diganti.",
+        "next": "node_dyk002",
+        "traits": {
+          "rationalism": 1,
+          "rebellion": 1
+        }
+      },
+      {
+        "id": "choice_dyk001b",
+        "text": "Aku tanya Nenek tentang Kaharingan, bukan tentang rapor.",
+        "next": "node_dyk003",
+        "traits": {
+          "spirituality": 2,
+          "tradition": 2
+        }
+      },
+      {
+        "id": "choice_dyk001c",
+        "text": "Aku biarkan saja. Yang penting aku bisa sekolah.",
+        "next": "node_dyk003",
+        "traits": {
+          "conformity": 1,
+          "progress": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_dyk002",
+    "stage": "youth",
+    "text": "Bapak menjelaskan sejarah pelan-pelan: Kaharingan diakui di bawah payung agama lain agar bisa memiliki hak sipil. \"Nama boleh berganti, tetapi kita tahu siapa kita.\" Ia mengajarimu mengucap doa pada Ranying Hatalla Langit dan menjaga hutan sebagai sesuatu yang suci.",
+    "tags": [
+      "sejarah",
+      "kepercayaan",
+      "keluarga"
+    ],
+    "choices": [
+      {
+        "id": "choice_dyk002a",
+        "text": "Aku akan menjaga kepercayaan ini dan belajar bahasa Ngaju dengan sungguh.",
+        "next": "node_dyk004",
+        "traits": {
+          "tradition": 2,
+          "spirituality": 1
+        }
+      },
+      {
+        "id": "choice_dyk002b",
+        "text": "Aku akan belajar hukum agar bisa membantu komunitas menuntut haknya.",
+        "next": "node_dyk004",
+        "traits": {
+          "rationalism": 1,
+          "progress": 1,
+          "rebellion": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_dyk003",
+    "stage": "youth",
+    "text": "Nenek mengajakmu ke hutan dan menunjukkan pohon tempat keluarga mengambil madu dan rotan. Ia menjelaskan aturan adat tentang apa yang boleh diambil dan kapan. Di kejauhan terdengar suara gergaji dan truk perusahaan kelapa sawit yang sedang membuka lahan.",
+    "tags": [
+      "hutan",
+      "adat",
+      "perubahan"
+    ],
+    "choices": [
+      {
+        "id": "choice_dyk003a",
+        "text": "Aku mencatat aturan adat Nenek supaya tidak hilang.",
+        "next": "node_dyk004",
+        "traits": {
+          "tradition": 2,
+          "collectivism": 1,
+          "rationalism": 1
+        }
+      },
+      {
+        "id": "choice_dyk003b",
+        "text": "Aku bertanya apakah kita bisa melawan perusahaan itu.",
+        "next": "node_dyk004",
+        "traits": {
+          "rebellion": 2,
+          "collectivism": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_dyk004",
+    "stage": "adult",
+    "text": "Kamu remaja dan sebuah perusahaan menawari warga ganti rugi untuk membuka lahan di hutan adat. Sebagian warga setuju karena uangnya nyata. Sebagian menolak. Keluargamu terbelah, dan paman yang biasanya ramah tidak lagi menyapa Bapak.",
+    "tags": [
+      "tanah",
+      "uang",
+      "perpecahan"
+    ],
+    "choices": [
+      {
+        "id": "choice_dyk004a",
+        "text": "Aku ikut rapat adat dan mendorong warga menolak secara bersama.",
+        "next": "node_dyk005",
+        "traits": {
+          "collectivism": 2,
+          "tradition": 1,
+          "rebellion": 1
+        }
+      },
+      {
+        "id": "choice_dyk004b",
+        "text": "Aku mendorong negosiasi agar warga mendapat kemitraan yang adil.",
+        "next": "node_dyk006",
+        "traits": {
+          "rationalism": 2,
+          "progress": 1,
+          "collectivism": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_dyk005",
+    "stage": "elder",
+    "text": "Warga menolak, dan konflik berlangsung bertahun-tahun. Kamu menjadi pegiat pemetaan wilayah adat, membawa GPS dan notebook tua ke hutan bersama para tetua. Saat tiwah akhirnya digelar, seluruh kampung hadir, dan kamu menatap langit dengan rasa lega yang pahit.",
+    "tags": [
+      "adat",
+      "perjuangan",
+      "upacara"
+    ],
+    "choices": [
+      {
+        "id": "choice_dyk005a",
+        "text": "Aku akan terus menjaga hutan dan upacara kami.",
+        "next": null,
+        "traits": {
+          "tradition": 2,
+          "spirituality": 1,
+          "collectivism": 2
+        }
+      },
+      {
+        "id": "choice_dyk005b",
+        "text": "Aku akan membawa cerita kami ke ruang-ruang kebijakan nasional.",
+        "next": null,
+        "traits": {
+          "rebellion": 1,
+          "progress": 1,
+          "rationalism": 1
+        }
+      }
+    ],
+    "isEnding": true
+  },
+  {
+    "id": "node_dyk006",
+    "stage": "elder",
+    "text": "Skema kemitraan berjalan, dengan banyak kompromi. Kebun karet warga bertahan dan sebagian hutan terjaga. Kamu bekerja sebagai penghubung antara perusahaan, pemerintah, dan kampung, kadang dicurigai kedua pihak. Kamu tahu bahwa menjadi jembatan sering berarti diinjak dari dua sisi.",
+    "tags": [
+      "kompromi",
+      "kepemimpinan"
+    ],
+    "choices": [
+      {
+        "id": "choice_dyk006a",
+        "text": "Aku bertahan. Perubahan kecil tetap berarti.",
+        "next": null,
+        "traits": {
+          "progress": 1,
+          "rationalism": 1,
+          "collectivism": 1
+        }
+      },
+      {
+        "id": "choice_dyk006b",
+        "text": "Aku kembali ke kampung dan membantu anak muda belajar adat.",
+        "next": null,
+        "traits": {
+          "tradition": 2,
+          "collectivism": 1,
+          "spirituality": 1
+        }
+      }
+    ],
+    "isEnding": true
+  }
+]

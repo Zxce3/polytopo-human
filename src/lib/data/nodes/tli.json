@@ -1,0 +1,199 @@
+[
+  {
+    "id": "node_tli001",
+    "stage": "childhood",
+    "text": "Kamu tujuh tahun, Tuli sejak lahir, dan di rumah keluargamu hanya Kakak yang bisa membaca gerak bibirmu pelan-pelan. Orang tuamu membawamu ke terapi wicara setiap sore. Suatu hari, di taman dekat rumah, kamu melihat dua anak bercakap dengan tangan, cepat dan hidup. Kamu berhenti dan menatap seperti menemukan negeri baru.",
+    "tags": [
+      "disabilitas",
+      "bahasa",
+      "keluarga"
+    ],
+    "choices": [
+      {
+        "id": "choice_tli001a",
+        "text": "Aku mendekat dan mengamati gerakan tangan mereka.",
+        "next": "node_tli002",
+        "traits": {
+          "freedom": 1,
+          "progress": 1,
+          "individualism": 1
+        }
+      },
+      {
+        "id": "choice_tli001b",
+        "text": "Aku tarik tangan Ibu dan menunjuk mereka, minta kami bergabung.",
+        "next": "node_tli002",
+        "traits": {
+          "collectivism": 1,
+          "freedom": 1
+        }
+      },
+      {
+        "id": "choice_tli001c",
+        "text": "Aku kembali ke Ibu. Terapi wicara itu tugasku sekarang.",
+        "next": "node_tli003",
+        "traits": {
+          "conformity": 1,
+          "authority": 1,
+          "tradition": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_tli002",
+    "stage": "youth",
+    "text": "Kedua anak itu, Dewi dan Raka, mengajarimu Bisindo, bahasa isyarat Indonesia, di bangku taman. Dalam seminggu kamu tahu namamu dalam isyarat. Di rumah, Ibu melihatmu bercakap dengan tanganmu di cermin dan matanya basah. \"Kenapa Ibu tidak bisa ikut ngobrol?\" tulisnya di kertas.",
+    "tags": [
+      "bahasa",
+      "identitas",
+      "keluarga"
+    ],
+    "choices": [
+      {
+        "id": "choice_tli002a",
+        "text": "Aku ajari Ibu dan Kakak satu isyarat tiap hari.",
+        "next": "node_tli004",
+        "traits": {
+          "collectivism": 2,
+          "progress": 1
+        }
+      },
+      {
+        "id": "choice_tli002b",
+        "text": "Aku biarkan itu jadi dunia milikku saja. Ibu belum mengerti.",
+        "next": "node_tli004",
+        "traits": {
+          "individualism": 2,
+          "freedom": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_tli003",
+    "stage": "youth",
+    "text": "Terapi wicara melelahkan. Kamu menirukan bunyi yang tidak pernah kamu dengar. Guru terapi memuji. Tetangga berkata, \"Syukurlah sudah hampir normal.\" Kamu tahu kata itu menyakitkan, meski tidak tahu cara membantahnya.",
+    "tags": [
+      "disabilitas",
+      "norma",
+      "terapi"
+    ],
+    "choices": [
+      {
+        "id": "choice_tli003a",
+        "text": "Aku terus berlatih supaya orang tidak menganggapku berbeda.",
+        "next": "node_tli004",
+        "traits": {
+          "conformity": 2,
+          "authority": 1
+        }
+      },
+      {
+        "id": "choice_tli003b",
+        "text": "Aku mulai bertanya kenapa aku harus 'hampir normal' untuk dihargai.",
+        "next": "node_tli004",
+        "traits": {
+          "rebellion": 2,
+          "rationalism": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_tli004",
+    "stage": "adult",
+    "text": "Di SMP inklusif, kamu duduk di depan dengan juru bahasa isyarat yang sering terlambat. Teman sekelas ada yang baik, ada yang mengejek dengan menirukan gerakan. Seorang guru sejarah, Pak Anton, belajar isyarat dari video agar bisa menyapamu.",
+    "tags": [
+      "sekolah",
+      "inklusi",
+      "pertemanan"
+    ],
+    "choices": [
+      {
+        "id": "choice_tli004a",
+        "text": "Aku ajak teman sekelas belajar isyarat dan buat klub kecil.",
+        "next": "node_tli005",
+        "traits": {
+          "collectivism": 2,
+          "progress": 1,
+          "freedom": 1
+        }
+      },
+      {
+        "id": "choice_tli004b",
+        "text": "Aku menuntut sekolah menyediakan juru bahasa tetap lewat surat resmi.",
+        "next": "node_tli006",
+        "traits": {
+          "rebellion": 1,
+          "rationalism": 1,
+          "progress": 1,
+          "authority": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_tli005",
+    "stage": "elder",
+    "text": "Klub isyarat tumbuh menjadi komunitas di kampus tempatmu belajar desain. Kamu membuat aplikasi kamus Bisindo bersama Dewi dan Raka. Suatu hari seorang ibu menulis padamu bahwa anaknya yang Tuli akhirnya punya kata untuk 'sayang'.",
+    "tags": [
+      "komunitas",
+      "teknologi",
+      "makna"
+    ],
+    "choices": [
+      {
+        "id": "choice_tli005a",
+        "text": "Aku terus membangun ruang yang dikelola komunitas Tuli sendiri.",
+        "next": null,
+        "traits": {
+          "collectivism": 2,
+          "progress": 1,
+          "freedom": 1
+        }
+      },
+      {
+        "id": "choice_tli005b",
+        "text": "Aku ingin dunia dengar belajar, bukan kita yang terus menyesuaikan.",
+        "next": null,
+        "traits": {
+          "rebellion": 2,
+          "progress": 1
+        }
+      }
+    ],
+    "isEnding": true
+  },
+  {
+    "id": "node_tli006",
+    "stage": "elder",
+    "text": "Surat resmimu ke dinas pendidikan menjadi berita. Sekolah menyediakan juru bahasa, dan kamu didengar. Namun kamu lelah menjadi 'wajah perjuangan'. Kamu ingin sesekali hanya menjadi remaja yang bercanda dengan teman-temannya.",
+    "tags": [
+      "advokasi",
+      "kelelahan",
+      "identitas"
+    ],
+    "choices": [
+      {
+        "id": "choice_tli006a",
+        "text": "Aku istirahat sebentar. Aku boleh menjadi biasa saja.",
+        "next": null,
+        "traits": {
+          "individualism": 2,
+          "freedom": 1
+        }
+      },
+      {
+        "id": "choice_tli006b",
+        "text": "Aku lanjutkan, tapi dengan teman-teman yang berbagi bebannya.",
+        "next": null,
+        "traits": {
+          "collectivism": 2,
+          "rebellion": 1
+        }
+      }
+    ],
+    "isEnding": true
+  }
+]

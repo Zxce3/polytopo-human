@@ -1,0 +1,198 @@
+[
+  {
+    "id": "node_bnt001",
+    "stage": "childhood",
+    "text": "Kamu sebelas tahun, tinggal di rumah semi permanen di bantaran kali Jakarta. Ibumu, Bu Ratna, berjualan nasi uduk subuh hingga siang, sendirian sejak Ayah pergi. Kamu sulung dari tiga bersaudara. Pagi ini adikmu demam dan Ibu harus tetap berdagang. \"Kalau kamu bolos, tidak ada yang menjaga mereka,\" katanya pelan.",
+    "tags": [
+      "keluarga",
+      "kemiskinan",
+      "tanggung-jawab"
+    ],
+    "choices": [
+      {
+        "id": "choice_bnt001a",
+        "text": "Aku bolos sekolah hari ini dan jaga adik-adik.",
+        "next": "node_bnt002",
+        "traits": {
+          "collectivism": 2,
+          "conformity": 1
+        }
+      },
+      {
+        "id": "choice_bnt001b",
+        "text": "Aku minta tetangga, Bu Sum, menjaga adik sebentar supaya aku tetap sekolah.",
+        "next": "node_bnt003",
+        "traits": {
+          "collectivism": 1,
+          "progress": 1,
+          "freedom": 1
+        }
+      },
+      {
+        "id": "choice_bnt001c",
+        "text": "Aku bilang aku capek dan marah, kenapa selalu aku yang harus mengalah.",
+        "next": "node_bnt003",
+        "traits": {
+          "rebellion": 2,
+          "individualism": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_bnt002",
+    "stage": "youth",
+    "text": "Bu Sum datang membawa bubur dan kompres, dan para tetangga bergantian menjaga anak-anak. Di gang sempit itu semua orang tahu masalah semua orang. Ada yang membantu, ada yang bergosip. Kamu belajar bahwa kebaikan dan gunjingan bisa lahir dari rumah yang sama.",
+    "tags": [
+      "komunitas",
+      "solidaritas",
+      "gunjingan"
+    ],
+    "choices": [
+      {
+        "id": "choice_bnt002a",
+        "text": "Aku balas kebaikan mereka dengan membantu mengantar pesanan.",
+        "next": "node_bnt004",
+        "traits": {
+          "collectivism": 2,
+          "tradition": 1
+        }
+      },
+      {
+        "id": "choice_bnt002b",
+        "text": "Aku mulai ingin keluar dari gang ini secepatnya.",
+        "next": "node_bnt004",
+        "traits": {
+          "individualism": 2,
+          "progress": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_bnt003",
+    "stage": "youth",
+    "text": "Di sekolah, guru menegur karena kamu mengantuk dan sering telat. Seorang guru BK, Bu Dian, memanggilmu pelan dan menawarkan program bantuan belajar sore. Kamu malu menerima, tapi juga tidak ingin selamanya tertinggal.",
+    "tags": [
+      "sekolah",
+      "bantuan",
+      "harga-diri"
+    ],
+    "choices": [
+      {
+        "id": "choice_bnt003a",
+        "text": "Aku terima bantuannya dan mulai ikut kelas sore.",
+        "next": "node_bnt004",
+        "traits": {
+          "progress": 2,
+          "rationalism": 1,
+          "freedom": 1
+        }
+      },
+      {
+        "id": "choice_bnt003b",
+        "text": "Aku tolak. Aku tidak mau dikasihani, aku akan belajar sendiri.",
+        "next": "node_bnt004",
+        "traits": {
+          "individualism": 2,
+          "rebellion": 1,
+          "conformity": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_bnt004",
+    "stage": "adult",
+    "text": "Banjir besar datang. Rumahmu terendam. Pemerintah menawari relokasi ke rusun, jauh dari pelanggan Ibu. Tetangga terbelah antara setuju, menolak, dan ragu. Ibu menatapmu, \"Kamu sudah besar. Menurut kamu bagaimana?\"",
+    "tags": [
+      "banjir",
+      "relokasi",
+      "keputusan"
+    ],
+    "choices": [
+      {
+        "id": "choice_bnt004a",
+        "text": "Aku ajak warga berunding dan bernegosiasi bersama.",
+        "next": "node_bnt005",
+        "traits": {
+          "collectivism": 2,
+          "rebellion": 1,
+          "progress": 1
+        }
+      },
+      {
+        "id": "choice_bnt004b",
+        "text": "Aku dukung pindah. Hidup di bantaran terlalu berisiko.",
+        "next": "node_bnt006",
+        "traits": {
+          "rationalism": 2,
+          "progress": 2,
+          "individualism": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_bnt005",
+    "stage": "elder",
+    "text": "Kamu dan warga membentuk paguyuban, menyusun tuntutan, dan akhirnya mendapat kesepakatan yang lebih adil: relokasi dengan kios dagang. Kamu menjadi pekerja sosial muda yang dihormati. Kadang kamu rindu gang sempit itu, tempat semua orang tahu namamu.",
+    "tags": [
+      "komunitas",
+      "advokasi"
+    ],
+    "choices": [
+      {
+        "id": "choice_bnt005a",
+        "text": "Aku terus mendampingi warga lain yang mengalami penggusuran.",
+        "next": null,
+        "traits": {
+          "collectivism": 2,
+          "rebellion": 1,
+          "progress": 1
+        }
+      },
+      {
+        "id": "choice_bnt005b",
+        "text": "Aku ingin kuliah dan belajar hukum agar bisa membela dari dalam.",
+        "next": null,
+        "traits": {
+          "progress": 2,
+          "rationalism": 1,
+          "individualism": 1
+        }
+      }
+    ],
+    "isEnding": true
+  },
+  {
+    "id": "node_bnt006",
+    "stage": "elder",
+    "text": "Di rusun, Ibu membuka warung kecil dengan nama baru. Kamu lulus kuliah beasiswa dan bekerja di perusahaan logistik. Setiap Minggu kamu pulang membawa belanjaan. Kamu bukan lagi sulung yang terpaksa dewasa, tetapi kebiasaan menjaga tetap melekat.",
+    "tags": [
+      "keluarga",
+      "mobilitas"
+    ],
+    "choices": [
+      {
+        "id": "choice_bnt006a",
+        "text": "Aku terima bahwa menjaga keluarga adalah bagian dari diriku.",
+        "next": null,
+        "traits": {
+          "collectivism": 2,
+          "tradition": 1
+        }
+      },
+      {
+        "id": "choice_bnt006b",
+        "text": "Aku belajar berkata tidak dan mengurus diriku sendiri juga.",
+        "next": null,
+        "traits": {
+          "individualism": 2,
+          "freedom": 1
+        }
+      }
+    ],
+    "isEnding": true
+  }
+]

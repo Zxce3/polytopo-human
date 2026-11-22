@@ -39,7 +39,7 @@
 		<div class="max-w-xl mx-auto w-full flex-1 flex flex-col justify-center">
 
 			{#key gameStore.session.currentNodeId}
-				<div in:fade={{ duration: 500, delay: 200 }} out:fade={{ duration: 250 }}>
+				<div in:fade={{ duration: 500, delay: 200 }} out:fade={{ duration: 250 }} aria-live="polite">
 
 					<!-- Narrative text -->
 					<p
@@ -53,7 +53,7 @@
 						<div class="flex flex-wrap gap-2 mb-8">
 							{#each gameStore.currentNode.tags as tag}
 								<span
-									class="text-[9px] uppercase tracking-widest text-stone-700
+									class="text-[9px] uppercase tracking-widest text-stone-500
 										border border-stone-800 px-2 py-0.5 font-sans"
 								>
 									{tag}
@@ -68,13 +68,13 @@
 							<button
 								onclick={() => gameStore.makeChoice(choice.id)}
 								class="group w-full text-left font-sans text-[0.95rem] leading-snug
-									text-stone-600 hover:text-stone-100
+									text-stone-400 hover:text-stone-100 focus-visible:text-stone-100 focus-visible:outline focus-visible:outline-1 focus-visible:outline-stone-400
 									border-l border-stone-800 hover:border-stone-600
 									pl-4 py-3 pr-2
 									transition-all duration-200 cursor-pointer"
 							>
 								<span
-									class="font-mono text-xs text-stone-800 group-hover:text-stone-600
+									class="font-mono text-xs text-stone-600 group-hover:text-stone-500
 										mr-3 transition-colors duration-200"
 								>
 									{String.fromCharCode(97 + i)}.
@@ -93,20 +93,20 @@
 	<!-- Footer -->
 	<footer class="px-6 pb-7 select-none">
 		<div class="max-w-xl mx-auto flex justify-between items-center">
-			<span class="text-[9px] uppercase tracking-[0.2em] text-stone-800">
+			<span class="text-[9px] uppercase tracking-[0.2em] text-stone-500">
 				{gameStore.session.choicesMade.length} pilihan
 			</span>
 			<a
 				href="/stories"
-				class="text-[9px] uppercase tracking-[0.2em] text-stone-700
-					hover:text-stone-500 transition-colors duration-200"
+				class="text-[9px] uppercase tracking-[0.2em] text-stone-500
+					hover:text-stone-300 transition-colors duration-200"
 			>
 				pilih kisah
 			</a>
 			<button
 				onclick={() => gameStore.reset()}
-				class="text-[9px] uppercase tracking-[0.2em] text-stone-800
-					hover:text-stone-600 transition-colors duration-200"
+				class="text-[9px] uppercase tracking-[0.2em] text-stone-500
+					hover:text-stone-300 transition-colors duration-200"
 			>
 				ulang
 			</button>

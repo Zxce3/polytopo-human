@@ -45,7 +45,9 @@ src/
       gameStore.svelte.ts   # Svelte 5 runes-based singleton store + localStorage
     data/
       nodes/
-        childhood.json      # 12 nodes, Indonesian-grounded childhood stage
+        childhood.json      # original story (village head's child, Java)
+        *.json              # one file per additional story
+      stories.json          # story registry: id, title, premise, start node
       traits.json           # 10 trait definitions + 8 archetype profiles
     types/
       game.ts               # all TypeScript interfaces
@@ -53,6 +55,8 @@ src/
     +page.svelte            # main game view — narrative + choices + stage progress
     summary/
       +page.svelte          # profile reveal — trait bars, path replay, session export
+    stories/
+      +page.svelte          # story picker
     +layout.svelte
     layout.css
 ```
@@ -117,7 +121,7 @@ Every completed session can be exported as anonymized JSON for future aggregatio
 
 ## Developing
 
-Requires Node.js ≥ 20.
+Requires Node.js ≥ 20 (a `bun.lock` is committed; `bun install` / `bun run dev` work too).
 
 ```sh
 npm install
@@ -130,6 +134,12 @@ Type check:
 npm run check
 ```
 
+Validate story data (unique ids, valid traits, resolvable links, reachable endings):
+
+```sh
+npm run validate
+```
+
 Production build:
 
 ```sh
@@ -139,10 +149,15 @@ npm run preview
 
 ---
 
+## Stories
+
+Besides the original village story, the game includes stories from Bugis Sulawesi, Peranakan Semarang, a Deaf child in Jakarta, Flores, Pattani (Thailand), a Jakarta riverbank settlement, Dayak Kaharingan Kalimantan, Tamil Malaysia and a Mexican-American family in Texas. All content is in Indonesian.
+
 ## Adding Content
 
-1. Add nodes to an existing `src/lib/data/nodes/*.json` or create a new stage file
-2. Load it in `gameStore.svelte.ts` via `engine.loadNodes(...)`
-3. Add new profiles to `traits.json` under `"profiles"`
+1. Add a new `src/lib/data/nodes/<story>.json` (all files in that folder are loaded automatically)
+2. Register it in `src/lib/data/stories.json` with its start node
+3. Run `npm run validate`
+4. Add new profiles to `traits.json` under `"profiles"`
 
 The engine handles everything else — no code changes needed for new narrative content.

@@ -28,7 +28,7 @@
 					<button
 						onclick={() => begin(story.start)}
 						class="w-full text-left border-l border-stone-800 hover:border-stone-600
-							pl-4 py-3 pr-2 cursor-pointer text-stone-500 hover:text-stone-100
+							pl-4 py-3 pr-2 cursor-pointer text-stone-400 hover:text-stone-100 focus-visible:text-stone-100
 							transition-colors duration-200"
 					>
 						<span class="block font-serif text-lg">{story.title}</span>
@@ -37,7 +37,7 @@
 				</li>
 			{/each}
 		</ul>
-		<a href="/" class="inline-block mt-10 text-[9px] uppercase tracking-[0.2em] text-stone-700 hover:text-stone-500">
+		<a href="/" class="inline-block mt-10 text-[9px] uppercase tracking-[0.2em] text-stone-500 hover:text-stone-300">
 			kembali
 		</a>
 	</main>

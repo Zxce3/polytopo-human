@@ -1,0 +1,45 @@
+{
+  "node_pcn001": {
+    "text": "You are nine, living above your family's grocery shop in Semarang's Chinatown (Pecinan). Before Chinese New Year, Ama arranges offerings at the ancestral altar while Bu Siti, the Muslim neighbor next door, brings over kue keranjang she made herself. Papa whispers, \"Remember 1998. Don't stand out too much, Mei.\"",
+    "choices": {
+      "choice_pcn001a": "I help Ama arrange the offerings and learn the ancestors' names.",
+      "choice_pcn001b": "I take a return gift to Bu Siti's house myself, then play with her children.",
+      "choice_pcn001c": "I ask Papa what happened in 1998 that makes him afraid."
+    }
+  },
+  "node_pcn002": {
+    "text": "Ama tells you about your great-grandfather, who came from Fujian with one suitcase, traded as a peddler, and married a Javanese woman. \"We have been here six generations,\" she says. At school a classmate says you are \"Chinese\" and should go home. You are confused about where home would be.",
+    "choices": {
+      "choice_pcn002a": "I answer, \"I was born in Semarang. This is my home.\"",
+      "choice_pcn002b": "I say nothing and begin avoiding conversations about where I come from."
+    }
+  },
+  "node_pcn003": {
+    "text": "Papa takes you to see the shop padlocked early in the morning because of rumors of unrest in a faraway city. Bu Siti and her husband come carrying brooms and sit guard together in front of the shop, unasked. Papa cannot say anything, he just pours tea.",
+    "choices": {
+      "choice_pcn003a": "I sit with them and share the tea. I feel we are one neighborhood.",
+      "choice_pcn003b": "I stay wary. One family's kindness does not guarantee everyone's."
+    }
+  },
+  "node_pcn004": {
+    "text": "You are a teenager and school asks you to choose: medical school in a big city as your family hopes, or the visual arts you love after painting a mural on an alley wall. Ama says, \"The shop will not wait for you, but this family waits.\"",
+    "choices": {
+      "choice_pcn004a": "I choose medicine and paint in my spare time.",
+      "choice_pcn004b": "I choose fine arts and am ready to explain it to my family."
+    }
+  },
+  "node_pcn005": {
+    "text": "You become a doctor at a community health center, serving patients of every ethnicity and faith. Every Chinese New Year you go home to arrange the offerings, and every Lebaran you visit Bu Siti. You do not feel split, but you know some people still see you as a guest in your own city.",
+    "choices": {
+      "choice_pcn005a": "I will keep showing up at both celebrations, as my whole self.",
+      "choice_pcn005b": "I begin writing and speaking about our family's history."
+    }
+  },
+  "node_pcn006": {
+    "text": "You are known as the muralist who decorates Pecinan's alleys with stories of residents from every background. Your family finally comes to your exhibition. Ama stands a long time before the painting of her shop, then says, \"The red is not dark enough.\" That is her way of saying she is proud.",
+    "choices": {
+      "choice_pcn006a": "I laugh and repaint the red together with Ama.",
+      "choice_pcn006b": "I thank her, but I still consider that red exactly right."
+    }
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "desa",
+    "title": "Anak Kepala Dusun",
+    "premise": "Anak seorang kepala dusun di desa Jawa, menimbang kewajiban pada tradisi dan komunitas dengan rasa ingin tahu pribadinya.",
+    "start": "node_c001"
+  },
+  {
+    "id": "lyr",
+    "title": "Layar yang Dijahit Bapak",
+    "premise": "Anak nelayan Bugis di pesisir Sulawesi Selatan, antara laut warisan keluarga dan sekolah di kota.",
+    "start": "node_lyr001"
+  },
+  {
+    "id": "pcn",
+    "title": "Toko di Pecinan",
+    "premise": "Gadis Peranakan Tionghoa di Semarang yang tumbuh di antara toko keluarga, altar leluhur, dan tetangga yang berbeda iman.",
+    "start": "node_pcn001"
+  },
+  {
+    "id": "tli",
+    "title": "Tangan yang Berbicara",
+    "premise": "Anak Tuli di Jakarta yang belajar bahasa isyarat, menavigasi sekolah, keluarga yang dengar, dan komunitasnya sendiri.",
+    "start": "node_tli001"
+  },
+  {
+    "id": "flr",
+    "title": "Telepon dari Hong Kong",
+    "premise": "Anak di Flores yang dibesarkan nenek, sementara ibunya bekerja di Hong Kong dan hanya hadir lewat layar ponsel.",
+    "start": "node_flr001"
+  },
+  {
+    "id": "ptn",
+    "title": "Kerudung Biru di Pattani",
+    "premise": "Gadis Melayu Muslim di Thailand Selatan yang sekolah berbahasa Thai sementara di rumah berbahasa Yawi.",
+    "start": "node_ptn001"
+  },
+  {
+    "id": "bnt",
+    "title": "Sulung di Bantaran Kali",
+    "premise": "Anak sulung dari ibu tunggal di permukiman padat bantaran sungai Jakarta, memikul tanggung jawab sebelum waktunya.",
+    "start": "node_bnt001"
+  },
+  {
+    "id": "dyk",
+    "title": "Tiwah di Tepi Sungai Kahayan",
+    "premise": "Remaja Dayak Ngaju penganut Kaharingan di Kalimantan Tengah yang menimbang adat leluhur, sekolah, dan perubahan hutan.",
+    "start": "node_dyk001"
+  },
+  {
+    "id": "prk",
+    "title": "Getah di Ladang Perak",
+    "premise": "Anak keluarga Tamil Hindu di perkebunan karet Perak, Malaysia, antara bahasa Tamil, sekolah Melayu, dan harapan akan kehidupan lebih baik.",
+    "start": "node_prk001"
+  },
+  {
+    "id": "mxc",
+    "title": "Dua Dapur, Satu Anak",
+    "premise": "Remaja anak imigran Meksiko di Texas yang menerjemahkan dunia bagi orang tuanya dan mencari tempat di dua budaya.",
+    "start": "node_mxc001"
+  }
+]

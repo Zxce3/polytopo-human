@@ -3,14 +3,20 @@ import { goto } from '$app/navigation';
 import { GameEngine } from '$lib/engine/gameEngine';
 import type { GameSession, GameNode, ProfileDefinition } from '$lib/types/game';
 
-import childhoodData from '$lib/data/nodes/childhood.json';
+import storiesData from '$lib/data/stories.json';
+import { langStore } from '$lib/i18n/lang.svelte';
+import { localizeNode, localizeChoices, localizeProfile, localizeStory } from '$lib/i18n/content';
 import traitsData from '$lib/data/traits.json';
 
 const STORAGE_KEY = 'polytopo_session';
 const START_NODE = 'node_c001';
 
 const engine = new GameEngine();
-engine.loadNodes(childhoodData as GameNode[]);
+const nodeModules = import.meta.glob<GameNode[]>('$lib/data/nodes/*.json', {
+	eager: true,
+	import: 'default',
+});
+for (const nodes of Object.values(nodeModules)) engine.loadNodes(nodes);
 engine.loadProfiles(traitsData.profiles as ProfileDefinition[]);
 
 function loadPersistedSession(): GameSession | null {
@@ -39,17 +45,38 @@ class GameStore {
 	}
 
 	get currentNode(): GameNode | undefined {
-		return engine.getNode(this.session.currentNodeId);
+		return localizeNode(engine.getNode(this.session.currentNodeId), langStore.lang);
 	}
 
 	get availableChoices() {
-		const node = this.currentNode;
+		const node = engine.getNode(this.session.currentNodeId);
 		if (!node) return [];
-		return engine.getAvailableChoices(node, this.session.traits);
+		return localizeChoices(
+			engine.getAvailableChoices(node, this.session.traits),
+			node.id,
+			langStore.lang
+		);
+	}
+
+	get currentStory() {
+		return stories.find((x) => x.start === this.session.pathTaken[0]);
+	}
+
+	/** The choices made so far, as readable text in the current language. */
+	get journey(): { stage: string; text: string }[] {
+		const out: { stage: string; text: string }[] = [];
+		this.session.choicesMade.forEach((choiceId, i) => {
+			const node = engine.getNode(this.session.pathTaken[i]);
+			const choice = node?.choices.find((c) => c.id === choiceId);
+			if (!node || !choice) return;
+			const [c] = localizeChoices([choice], node.id, langStore.lang);
+			out.push({ stage: node.stage, text: c.text });
+		});
+		return out;
 	}
 
 	get currentProfile(): ProfileDefinition | null {
-		return engine.computeProfile(this.session.traits);
+		return localizeProfile(engine.computeProfile(this.session.traits), langStore.lang);
 	}
 
 	get isComplete(): boolean {
@@ -57,7 +84,7 @@ class GameStore {
 	}
 
 	makeChoice(choiceId: string): void {
-		const node = this.currentNode;
+		const node = engine.getNode(this.session.currentNodeId);
 		if (!node) return;
 		const choice = node.choices.find(c => c.id === choiceId);
 		if (!choice) return;
@@ -65,7 +92,7 @@ class GameStore {
 		this.session = engine.applyChoice(this.session, choice);
 
 		if (this.isComplete) {
-			const profile = this.currentProfile;
+			const profile = engine.computeProfile(this.session.traits);
 			this.session = {
 				...this.session,
 				completedAt: new Date().toISOString(),
@@ -75,13 +102,17 @@ class GameStore {
 		}
 	}
 
+	startStory(startNodeId: string): void {
+		this.session = engine.createSession(startNodeId);
+	}
+
 	reset(): void {
 		this.session = engine.createSession(START_NODE);
 		if (browser) localStorage.removeItem(STORAGE_KEY);
 	}
 
 	exportSession(): string {
-		const profile = this.currentProfile;
+		const profile = engine.computeProfile(this.session.traits);
 		return JSON.stringify(
 			engine.exportSession(this.session, profile?.name ?? 'Unknown'),
 			null,
@@ -90,5 +121,7 @@ class GameStore {
 	}
 }
 
+export const stories: { id: string; title: string; premise: string; start: string }[] = storiesData;
+export const localizedStories = () => stories.map((x) => localizeStory(x, langStore.lang));
 export const gameStore = new GameStore();
 export { engine };

@@ -1,0 +1,42 @@
+{
+  "authority": {
+    "label": "Authority",
+    "description": "Respecting and upholding social hierarchy"
+  },
+  "freedom": {
+    "label": "Freedom",
+    "description": "Valuing autonomy and self-expression"
+  },
+  "collectivism": {
+    "label": "Collectivism",
+    "description": "Putting the community's interests first"
+  },
+  "individualism": {
+    "label": "Individualism",
+    "description": "Valuing personal needs and choices"
+  },
+  "spirituality": {
+    "label": "Spirituality",
+    "description": "Seeking meaning through faith and belief"
+  },
+  "rationalism": {
+    "label": "Rationalism",
+    "description": "Valuing logic and empirical evidence"
+  },
+  "tradition": {
+    "label": "Tradition",
+    "description": "Honoring heritage and the old ways"
+  },
+  "progress": {
+    "label": "Progress",
+    "description": "Driving change and innovation"
+  },
+  "conformity": {
+    "label": "Conformity",
+    "description": "Adapting to social norms"
+  },
+  "rebellion": {
+    "label": "Rebellion",
+    "description": "Challenging rules and the status quo"
+  }
+}

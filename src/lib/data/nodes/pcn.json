@@ -1,0 +1,200 @@
+[
+  {
+    "id": "node_pcn001",
+    "stage": "childhood",
+    "text": "Kamu sembilan tahun, tinggal di lantai atas toko kelontong keluarga di kawasan Pecinan Semarang. Menjelang Imlek, Ama menata sesaji di altar leluhur, sementara Bu Siti, tetangga sebelah yang Muslim, mengantar kue keranjang buatannya sendiri. Papa berbisik, \"Ingat 1998. Jangan terlalu menonjol, Mei.\"",
+    "tags": [
+      "keluarga",
+      "tetangga",
+      "minoritas"
+    ],
+    "choices": [
+      {
+        "id": "choice_pcn001a",
+        "text": "Aku bantu Ama menata sesaji dan belajar nama-nama leluhur.",
+        "next": "node_pcn002",
+        "traits": {
+          "tradition": 2,
+          "spirituality": 1,
+          "collectivism": 1
+        }
+      },
+      {
+        "id": "choice_pcn001b",
+        "text": "Aku antar kue balasan ke rumah Bu Siti sendiri, lalu main dengan anak-anaknya.",
+        "next": "node_pcn003",
+        "traits": {
+          "collectivism": 1,
+          "freedom": 1,
+          "progress": 1
+        }
+      },
+      {
+        "id": "choice_pcn001c",
+        "text": "Aku tanya Papa apa yang terjadi pada 1998 sampai ia takut.",
+        "next": "node_pcn003",
+        "traits": {
+          "rationalism": 1,
+          "rebellion": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_pcn002",
+    "stage": "youth",
+    "text": "Ama menceritakan kakek buyutmu yang datang dari Fujian dengan satu koper, berdagang keliling, dan menikah dengan perempuan Jawa. \"Kita sudah di sini enam generasi,\" katanya. Di sekolah, seorang teman berkata kamu \"orang China\" yang harus pulang. Kamu bingung pulang ke mana.",
+    "tags": [
+      "identitas",
+      "sejarah",
+      "sekolah"
+    ],
+    "choices": [
+      {
+        "id": "choice_pcn002a",
+        "text": "Aku jawab, \"Aku lahir di Semarang. Ini rumahku.\"",
+        "next": "node_pcn004",
+        "traits": {
+          "individualism": 1,
+          "rebellion": 1,
+          "freedom": 1
+        }
+      },
+      {
+        "id": "choice_pcn002b",
+        "text": "Aku diam dan mulai menghindari pembicaraan tentang asal-usul.",
+        "next": "node_pcn004",
+        "traits": {
+          "conformity": 2,
+          "authority": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_pcn003",
+    "stage": "youth",
+    "text": "Papa mengajakmu melihat tokonya digembok pagi-pagi karena ada isu kerusuhan jauh di kota lain. Bu Siti dan suaminya datang membawa sapu dan duduk berjaga bersama di depan toko tanpa diminta. Papa tidak bisa berkata apa-apa, hanya menuangkan teh.",
+    "tags": [
+      "solidaritas",
+      "tetangga",
+      "kecemasan"
+    ],
+    "choices": [
+      {
+        "id": "choice_pcn003a",
+        "text": "Aku ikut duduk dan membagi teh. Aku merasa kami satu kampung.",
+        "next": "node_pcn004",
+        "traits": {
+          "collectivism": 2,
+          "freedom": 1
+        }
+      },
+      {
+        "id": "choice_pcn003b",
+        "text": "Aku tetap waspada. Kebaikan satu keluarga tidak menjamin semua orang.",
+        "next": "node_pcn004",
+        "traits": {
+          "rationalism": 1,
+          "authority": 1,
+          "conformity": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_pcn004",
+    "stage": "adult",
+    "text": "Kamu remaja dan sekolah memintamu memilih, antara kuliah kedokteran di kota besar sesuai harapan keluarga, atau seni rupa yang kamu cintai setelah melukis mural di tembok gang. Ama berkata, \"Toko ini tidak akan menunggumu, tapi keluarga ini menunggu.\"",
+    "tags": [
+      "pilihan-hidup",
+      "keluarga",
+      "seni"
+    ],
+    "choices": [
+      {
+        "id": "choice_pcn004a",
+        "text": "Aku pilih kedokteran dan melukis di waktu luang.",
+        "next": "node_pcn005",
+        "traits": {
+          "conformity": 1,
+          "collectivism": 1,
+          "tradition": 1
+        }
+      },
+      {
+        "id": "choice_pcn004b",
+        "text": "Aku pilih seni rupa dan siap menjelaskan pada keluarga.",
+        "next": "node_pcn006",
+        "traits": {
+          "freedom": 2,
+          "individualism": 1,
+          "rebellion": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_pcn005",
+    "stage": "elder",
+    "text": "Kamu menjadi dokter di puskesmas, melayani pasien dari segala suku dan iman. Setiap Imlek kamu pulang menata sesaji, dan setiap Lebaran bertamu ke rumah Bu Siti. Kamu tidak merasa terbelah, tapi kamu tahu ada orang yang masih melihatmu sebagai tamu di kotamu sendiri.",
+    "tags": [
+      "identitas",
+      "pelayanan"
+    ],
+    "choices": [
+      {
+        "id": "choice_pcn005a",
+        "text": "Aku akan terus hadir di dua perayaan itu, sebagai diriku utuh.",
+        "next": null,
+        "traits": {
+          "collectivism": 2,
+          "tradition": 1,
+          "progress": 1
+        }
+      },
+      {
+        "id": "choice_pcn005b",
+        "text": "Aku mulai menulis dan berbicara tentang sejarah keluarga kami.",
+        "next": null,
+        "traits": {
+          "rebellion": 1,
+          "rationalism": 1,
+          "progress": 1
+        }
+      }
+    ],
+    "isEnding": true
+  },
+  {
+    "id": "node_pcn006",
+    "stage": "elder",
+    "text": "Kamu dikenal sebagai pelukis mural yang menghiasi gang-gang Pecinan dengan cerita warga dari berbagai latar belakang. Keluarga akhirnya datang ke pameranmu. Ama berdiri lama di depan lukisan tokonya, lalu berkata, \"Warna merahnya kurang tua.\" Itu caranya berkata bangga.",
+    "tags": [
+      "seni",
+      "rekonsiliasi"
+    ],
+    "choices": [
+      {
+        "id": "choice_pcn006a",
+        "text": "Aku tertawa dan mengecat ulang merahnya bersama Ama.",
+        "next": null,
+        "traits": {
+          "tradition": 1,
+          "collectivism": 1,
+          "freedom": 1
+        }
+      },
+      {
+        "id": "choice_pcn006b",
+        "text": "Aku berterima kasih, tetapi merah itu tetap kuanggap tepat.",
+        "next": null,
+        "traits": {
+          "individualism": 2,
+          "freedom": 1
+        }
+      }
+    ],
+    "isEnding": true
+  }
+]

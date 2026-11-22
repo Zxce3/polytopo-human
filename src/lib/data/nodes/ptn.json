@@ -1,0 +1,203 @@
+[
+  {
+    "id": "node_ptn001",
+    "stage": "childhood",
+    "text": "Kamu sembilan tahun, tinggal di desa dekat Pattani di Thailand selatan. Di rumah kamu berbicara Melayu Pattani, sementara di sekolah negeri semua pelajaran dalam bahasa Thai. Hari ini guru memintamu menyanyikan lagu kebangsaan Thai dan menggantikan kerudung biru seragammu dengan topi kelas. Kamu tertegun. Nenek selalu bilang kerudung adalah bagian dari dirimu.",
+    "tags": [
+      "bahasa",
+      "agama",
+      "sekolah"
+    ],
+    "choices": [
+      {
+        "id": "choice_ptn001a",
+        "text": "Aku tanya guru sopan apakah boleh tetap memakai kerudung.",
+        "next": "node_ptn002",
+        "traits": {
+          "freedom": 1,
+          "rationalism": 1,
+          "spirituality": 1
+        }
+      },
+      {
+        "id": "choice_ptn001b",
+        "text": "Aku ikuti peraturan sekolah dan ceritakan pada Nenek nanti.",
+        "next": "node_ptn003",
+        "traits": {
+          "conformity": 2,
+          "authority": 1
+        }
+      },
+      {
+        "id": "choice_ptn001c",
+        "text": "Aku menolak melepas kerudung dan siap menanggung akibatnya.",
+        "next": "node_ptn002",
+        "traits": {
+          "rebellion": 2,
+          "spirituality": 1,
+          "tradition": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_ptn002",
+    "stage": "youth",
+    "text": "Guru, Khru Somsri, ternyata ramah dan malu mendengar pertanyaan itu. Ia bilang akan bicara pada kepala sekolah. Beberapa teman Buddha di kelas penasaran dan bertanya soal puasa. Kamu mengajari mereka menghitung hari Ramadan dan mereka mengajarimu cara membuat kantung doa kecil dari kain, tanpa saling menukar iman.",
+    "tags": [
+      "pertemanan",
+      "agama",
+      "dialog"
+    ],
+    "choices": [
+      {
+        "id": "choice_ptn002a",
+        "text": "Aku bertukar cerita dengan mereka tiap istirahat.",
+        "next": "node_ptn004",
+        "traits": {
+          "collectivism": 1,
+          "progress": 1,
+          "freedom": 1
+        }
+      },
+      {
+        "id": "choice_ptn002b",
+        "text": "Aku tetap menjaga jarak. Aku takut kehilangan diriku.",
+        "next": "node_ptn004",
+        "traits": {
+          "tradition": 1,
+          "spirituality": 1,
+          "conformity": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_ptn003",
+    "stage": "youth",
+    "text": "Sore itu kamu belajar mengaji di pondok dekat rumah. Tok Guru mengajarimu tulisan Jawi dan hikayat. Di jalan pulang, tentara berpatroli di pos. Kamu sudah terbiasa dengan karung pasir, tapi kamu tidak pernah terbiasa dengan cara orang tua berhenti bicara saat mereka lewat.",
+    "tags": [
+      "agama",
+      "konflik",
+      "kehidupan-sehari-hari"
+    ],
+    "choices": [
+      {
+        "id": "choice_ptn003a",
+        "text": "Aku bertanya pada Ayah apa yang terjadi di wilayah kami.",
+        "next": "node_ptn004",
+        "traits": {
+          "rationalism": 2,
+          "rebellion": 1
+        }
+      },
+      {
+        "id": "choice_ptn003b",
+        "text": "Aku belajar menunduk dan berdoa. Kami hanya ingin hidup damai.",
+        "next": "node_ptn004",
+        "traits": {
+          "spirituality": 2,
+          "conformity": 1,
+          "collectivism": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_ptn004",
+    "stage": "adult",
+    "text": "Kamu remaja dan lulus ujian nasional dengan nilai bagus. Ada beasiswa kuliah di Bangkok, jauh dari desa. Tapi di Bangkok, ada risiko tinggal tanpa komunitas, tanpa halal food dan musala. Orang tuamu terbelah antara bangga dan khawatir.",
+    "tags": [
+      "pendidikan",
+      "pilihan",
+      "identitas"
+    ],
+    "choices": [
+      {
+        "id": "choice_ptn004a",
+        "text": "Aku ambil beasiswa dan bersiap menjaga identitasku di tempat asing.",
+        "next": "node_ptn005",
+        "traits": {
+          "progress": 2,
+          "individualism": 1,
+          "freedom": 1
+        }
+      },
+      {
+        "id": "choice_ptn004b",
+        "text": "Aku kuliah di universitas dekat Pattani agar bisa tetap dekat keluarga.",
+        "next": "node_ptn006",
+        "traits": {
+          "collectivism": 2,
+          "tradition": 1,
+          "spirituality": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_ptn005",
+    "stage": "elder",
+    "text": "Di Bangkok kamu menjadi mahasiswa kedokteran. Kamu belajar bahasa Thai yang halus, tapi tetap menyanyi lagu pengantar tidur Nenek dalam Melayu. Setelah lulus kamu memilih kembali ke Pattani sebagai dokter, dengan dua bahasa di lidahmu dan dua dunia yang kamu jahit dengan sabar.",
+    "tags": [
+      "kembali",
+      "bahasa",
+      "jembatan"
+    ],
+    "choices": [
+      {
+        "id": "choice_ptn005a",
+        "text": "Aku jadi penghubung antara pasien desa dan sistem kesehatan negara.",
+        "next": null,
+        "traits": {
+          "collectivism": 2,
+          "progress": 1,
+          "rationalism": 1
+        }
+      },
+      {
+        "id": "choice_ptn005b",
+        "text": "Aku menulis tentang pengalaman kami dalam dua bahasa.",
+        "next": null,
+        "traits": {
+          "freedom": 1,
+          "rebellion": 1,
+          "individualism": 1
+        }
+      }
+    ],
+    "isEnding": true
+  },
+  {
+    "id": "node_ptn006",
+    "stage": "elder",
+    "text": "Kamu menjadi guru di sekolah dekat rumah, mengajar anak-anak Melayu dan Thai bersama. Di kelasmu, kerudung biru dan topi seragam tampak berdampingan. Kamu tahu perdamaian bukan kata besar, tetapi pelajaran kecil yang diulang setiap pagi.",
+    "tags": [
+      "pendidikan",
+      "perdamaian"
+    ],
+    "choices": [
+      {
+        "id": "choice_ptn006a",
+        "text": "Aku akan terus menjaga kelas ini sebagai ruang aman untuk semua.",
+        "next": null,
+        "traits": {
+          "collectivism": 2,
+          "spirituality": 1,
+          "tradition": 1
+        }
+      },
+      {
+        "id": "choice_ptn006b",
+        "text": "Aku ingin kurikulum yang memuat sejarah dan bahasa kami.",
+        "next": null,
+        "traits": {
+          "rebellion": 1,
+          "progress": 2,
+          "rationalism": 1
+        }
+      }
+    ],
+    "isEnding": true
+  }
+]

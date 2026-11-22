@@ -1,0 +1,202 @@
+[
+  {
+    "id": "node_flr001",
+    "stage": "childhood",
+    "text": "Kamu delapan tahun di sebuah kampung di Flores. Ibumu bekerja di Hong Kong sebagai pekerja rumah tangga, dan kamu tinggal bersama Nenek serta paman. Setiap Minggu malam, sesudah misa, ponsel Nenek berdering dan wajah Ibu muncul di layar retak. \"Sekolah bagaimana, Nak?\" tanyanya, suaranya putus-putus.",
+    "tags": [
+      "keluarga",
+      "migrasi",
+      "iman"
+    ],
+    "choices": [
+      {
+        "id": "choice_flr001a",
+        "text": "Aku ceritakan semuanya pada Ibu, termasuk yang sedih.",
+        "next": "node_flr002",
+        "traits": {
+          "collectivism": 1,
+          "freedom": 1
+        }
+      },
+      {
+        "id": "choice_flr001b",
+        "text": "Aku bilang semua baik-baik saja supaya Ibu tidak khawatir.",
+        "next": "node_flr002",
+        "traits": {
+          "conformity": 1,
+          "collectivism": 1,
+          "authority": 1
+        }
+      },
+      {
+        "id": "choice_flr001c",
+        "text": "Aku menunduk. Aku tidak mau bicara, aku mau Ibu pulang.",
+        "next": "node_flr003",
+        "traits": {
+          "rebellion": 1,
+          "individualism": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_flr002",
+    "stage": "youth",
+    "text": "Nenek mengajarkanmu rosario dan cerita adat tentang leluhur di kebun. Ia bilang doa dan adat tidak bertengkar di rumahnya. Ia memetik jagung di ladang kecil dan berbisik, \"Ibumu sedang menanam untuk kita di tempat jauh.\" Kamu merasa ada dua jenis iman dan kerja yang saling menyambung.",
+    "tags": [
+      "iman",
+      "adat",
+      "keluarga"
+    ],
+    "choices": [
+      {
+        "id": "choice_flr002a",
+        "text": "Aku ikut Nenek berdoa tiap malam dan belajar cerita adat.",
+        "next": "node_flr004",
+        "traits": {
+          "spirituality": 2,
+          "tradition": 2,
+          "collectivism": 1
+        }
+      },
+      {
+        "id": "choice_flr002b",
+        "text": "Aku lebih tertarik pada kerja ladangnya daripada doanya.",
+        "next": "node_flr004",
+        "traits": {
+          "rationalism": 1,
+          "individualism": 1,
+          "tradition": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_flr003",
+    "stage": "youth",
+    "text": "Paman marah. \"Ibumu kirim uang tapi tidak ada di sini.\" Kamu mendengar, lalu melihat uang itu mengganti atap seng rumah. Di sekolah, guru bertanya siapa orang tuamu dan teman-teman menyebutmu 'anak TKW'. Kata itu kamu bawa pulang.",
+    "tags": [
+      "stigma",
+      "uang",
+      "kehilangan"
+    ],
+    "choices": [
+      {
+        "id": "choice_flr003a",
+        "text": "Aku katakan dengan bangga bahwa Ibuku bekerja keras.",
+        "next": "node_flr004",
+        "traits": {
+          "collectivism": 1,
+          "rebellion": 1,
+          "freedom": 1
+        }
+      },
+      {
+        "id": "choice_flr003b",
+        "text": "Aku mulai menutupi pekerjaan Ibu dari teman-temanku.",
+        "next": "node_flr004",
+        "traits": {
+          "conformity": 2,
+          "individualism": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_flr004",
+    "stage": "adult",
+    "text": "Kamu remaja. Ibu pulang untuk pertama kali setelah tujuh tahun, kurus dan asing, dengan hadiah yang tidak lagi muat di tubuhmu. Kalian canggung. Ia ingin tinggal, tetapi kontraknya masih satu tahun lagi dan adikmu butuh biaya sekolah.",
+    "tags": [
+      "pulang",
+      "kerinduan",
+      "pilihan"
+    ],
+    "choices": [
+      {
+        "id": "choice_flr004a",
+        "text": "Aku minta Ibu tinggal. Biar aku yang bekerja dan bantu adik.",
+        "next": "node_flr005",
+        "traits": {
+          "collectivism": 2,
+          "authority": 1,
+          "tradition": 1
+        }
+      },
+      {
+        "id": "choice_flr004b",
+        "text": "Aku bilang Ibu boleh kembali. Aku mengerti, dan aku akan belajar sungguh-sungguh.",
+        "next": "node_flr006",
+        "traits": {
+          "progress": 2,
+          "rationalism": 1,
+          "individualism": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_flr005",
+    "stage": "elder",
+    "text": "Kamu putus sekolah sementara demi bekerja di kebun dan toko. Ibu tinggal dan pelan-pelan kalian belajar saling mengenal. Kamu kelak mendirikan kelompok tani kakao di kampung supaya perempuan tidak harus pergi jauh untuk bekerja.",
+    "tags": [
+      "pengorbanan",
+      "komunitas"
+    ],
+    "choices": [
+      {
+        "id": "choice_flr005a",
+        "text": "Aku bangun kelompok tani itu dengan Ibu dan Nenek sebagai penasihat.",
+        "next": null,
+        "traits": {
+          "collectivism": 2,
+          "tradition": 1,
+          "progress": 1
+        }
+      },
+      {
+        "id": "choice_flr005b",
+        "text": "Aku menabung agar adik bisa lanjut kuliah. Mimpiku menyusul belakangan.",
+        "next": null,
+        "traits": {
+          "collectivism": 1,
+          "authority": 1,
+          "conformity": 1
+        }
+      }
+    ],
+    "isEnding": true
+  },
+  {
+    "id": "node_flr006",
+    "stage": "elder",
+    "text": "Kamu menjadi perawat dan bekerja di rumah sakit di Kupang, lalu mendapat tawaran ke luar negeri. Ibu menggenggam tanganmu. \"Kali ini kamu yang memilih,\" katanya. Kamu tahu apa artinya jarak: sebuah layar retak yang menyambungkan dua dunia.",
+    "tags": [
+      "migrasi",
+      "warisan",
+      "pilihan"
+    ],
+    "choices": [
+      {
+        "id": "choice_flr006a",
+        "text": "Aku ambil tawaran itu dan berjanji menelepon setiap Minggu malam.",
+        "next": null,
+        "traits": {
+          "progress": 2,
+          "individualism": 1,
+          "freedom": 1
+        }
+      },
+      {
+        "id": "choice_flr006b",
+        "text": "Aku tetap tinggal dekat keluarga. Aku tahu harga jarak itu.",
+        "next": null,
+        "traits": {
+          "collectivism": 2,
+          "tradition": 1,
+          "spirituality": 1
+        }
+      }
+    ],
+    "isEnding": true
+  }
+]

@@ -1,0 +1,201 @@
+[
+  {
+    "id": "node_lyr001",
+    "stage": "childhood",
+    "text": "Kamu sepuluh tahun, tinggal di rumah panggung di pesisir Bone. Subuh itu Bapak menjahit layar perahu dengan jarum besar, dan Nenek menyiapkan kopi hitam. \"Pappaseng dari leluhur kita: laut tidak pernah menipu orang yang tahu diri,\" kata Bapak. Hari ini ia mengajakmu melaut pertama kali, padahal ada ulangan matematika di sekolah.",
+    "tags": [
+      "keluarga",
+      "laut",
+      "pilihan-pertama"
+    ],
+    "choices": [
+      {
+        "id": "choice_lyr001a",
+        "text": "Aku ikut Bapak melaut. Laut adalah sekolah pertamaku.",
+        "next": "node_lyr002",
+        "traits": {
+          "tradition": 1,
+          "collectivism": 1,
+          "authority": 1
+        }
+      },
+      {
+        "id": "choice_lyr001b",
+        "text": "Aku minta Bapak menunggu sampai ulangan selesai, lalu melaut sore harinya.",
+        "next": "node_lyr003",
+        "traits": {
+          "progress": 1,
+          "rationalism": 1,
+          "collectivism": 1
+        }
+      },
+      {
+        "id": "choice_lyr001c",
+        "text": "Aku berangkat ke sekolah. Bapak tidak bisa memaksaku.",
+        "next": "node_lyr003",
+        "traits": {
+          "individualism": 1,
+          "progress": 1,
+          "rebellion": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_lyr002",
+    "stage": "youth",
+    "text": "Di tengah laut, ombak naik dan Bapak membaca langit, bukan alat apa pun. Ia menunjuk awan tipis di barat. \"Kita pulang sebelum zuhur.\" Kamu melihat bagaimana pengetahuan yang tidak pernah tertulis menyelamatkan perahu kecil itu. Di dermaga, tengkulak menawar ikan dengan harga yang membuat Bapak diam lama.",
+    "tags": [
+      "laut",
+      "kelas",
+      "pengetahuan-lokal"
+    ],
+    "choices": [
+      {
+        "id": "choice_lyr002a",
+        "text": "Aku ingin belajar membaca langit seperti Bapak.",
+        "next": "node_lyr004",
+        "traits": {
+          "tradition": 2,
+          "spirituality": 1
+        }
+      },
+      {
+        "id": "choice_lyr002b",
+        "text": "Aku bertanya mengapa harga ikan kita selalu ditentukan orang lain.",
+        "next": "node_lyr004",
+        "traits": {
+          "rationalism": 1,
+          "progress": 1,
+          "rebellion": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_lyr003",
+    "stage": "youth",
+    "text": "Guru matematikamu, Bu Rahmi, memuji nilaimu dan menyebut ada beasiswa untuk SMP unggulan di Makassar. Di rumah, kamu menyampaikannya. Bapak menatap jaring di tangannya. Nenek berkata pelan, \"Anak laki-laki Bone tidak boleh lupa jalan pulang.\" Ibu menyimpan senyum sekaligus cemas.",
+    "tags": [
+      "pendidikan",
+      "keluarga",
+      "merantau"
+    ],
+    "choices": [
+      {
+        "id": "choice_lyr003a",
+        "text": "Aku akan mengambil beasiswa itu dan berjanji pulang tiap libur.",
+        "next": "node_lyr004",
+        "traits": {
+          "progress": 2,
+          "individualism": 1
+        }
+      },
+      {
+        "id": "choice_lyr003b",
+        "text": "Aku belum bisa meninggalkan Bapak yang makin tua. Aku tunda dulu.",
+        "next": "node_lyr004",
+        "traits": {
+          "collectivism": 2,
+          "tradition": 1,
+          "conformity": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_lyr004",
+    "stage": "adult",
+    "text": "Tahun-tahun berlalu. Kamu dewasa dengan dua bahasa dalam diri: Bugis di rumah, Indonesia di kota. Sebuah perusahaan perikanan menawarimu kerja tetap di Makassar dengan gaji besar. Di saat yang sama, Bapak sakit dan koperasi nelayan di kampung nyaris bubar karena utang ke tengkulak.",
+    "tags": [
+      "pekerjaan",
+      "komunitas",
+      "dilema"
+    ],
+    "choices": [
+      {
+        "id": "choice_lyr004a",
+        "text": "Aku pulang dan mencoba membangun koperasi dengan ilmu yang kupelajari.",
+        "next": "node_lyr005",
+        "traits": {
+          "collectivism": 2,
+          "progress": 1,
+          "tradition": 1
+        }
+      },
+      {
+        "id": "choice_lyr004b",
+        "text": "Aku terima pekerjaan itu dan mengirim uang tiap bulan untuk keluarga.",
+        "next": "node_lyr006",
+        "traits": {
+          "individualism": 1,
+          "progress": 1,
+          "freedom": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_lyr005",
+    "stage": "elder",
+    "text": "Koperasi tumbuh pelan, penuh rapat panjang dan perselisihan. Anak-anak muda kampung mulai bertanya apakah mereka perlu laut atau ponsel. Di usia tuamu kamu duduk di dermaga yang sama, menjahit layar baru, dan ada anak kecil menunggu giliran memegang jarum.",
+    "tags": [
+      "warisan",
+      "komunitas"
+    ],
+    "choices": [
+      {
+        "id": "choice_lyr005a",
+        "text": "Aku ajarkan mereka laut sekaligus cara menghitung untung rugi.",
+        "next": null,
+        "traits": {
+          "tradition": 1,
+          "progress": 1,
+          "collectivism": 2
+        }
+      },
+      {
+        "id": "choice_lyr005b",
+        "text": "Aku biarkan mereka memilih sendiri jalannya, seperti aku dulu.",
+        "next": null,
+        "traits": {
+          "freedom": 2,
+          "individualism": 1
+        }
+      }
+    ],
+    "isEnding": true
+  },
+  {
+    "id": "node_lyr006",
+    "stage": "elder",
+    "text": "Kota memberimu rumah, bahasa baru, dan jarak dari kampung. Kamu pulang pada Lebaran dan dialek Bugismu terdengar kaku bagi keponakan sendiri. Di dermaga, Bapak yang sudah renta bertanya apakah kamu bahagia dengan jalan yang kamu pilih.",
+    "tags": [
+      "merantau",
+      "identitas"
+    ],
+    "choices": [
+      {
+        "id": "choice_lyr006a",
+        "text": "Aku bahagia, tapi sebagian diriku selalu tertinggal di sini.",
+        "next": null,
+        "traits": {
+          "individualism": 1,
+          "progress": 1,
+          "tradition": 1
+        }
+      },
+      {
+        "id": "choice_lyr006b",
+        "text": "Aku akan mulai belajar lagi bahasa dan lautku. Belum terlambat.",
+        "next": null,
+        "traits": {
+          "tradition": 2,
+          "collectivism": 1,
+          "spirituality": 1
+        }
+      }
+    ],
+    "isEnding": true
+  }
+]

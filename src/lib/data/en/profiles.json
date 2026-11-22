@@ -1,0 +1,34 @@
+{
+  "village_pillar": {
+    "name": "Village Pillar",
+    "description": "You are the glue of your community. You live for others, keep traditions, and make sure harmony holds. People rely on you, and you accept it graciously and with gratitude."
+  },
+  "free_spirit": {
+    "name": "Free Spirit",
+    "description": "You are not easily caged by other people's expectations. Your life is your own experiment. You believe the path few people follow is often the most meaningful, even if you must clear it alone."
+  },
+  "devout_servant": {
+    "name": "Sincere Servant",
+    "description": "Faith is your compass. You weigh every decision against deeply rooted spiritual values. You find true peace in worship, devotion, and sincere surrender."
+  },
+  "modern_thinker": {
+    "name": "Modern Thinker",
+    "description": "You believe in the power of reason and data. You question what exists and push for change grounded in evidence and logic, not mere habit or comfort."
+  },
+  "quiet_rebel": {
+    "name": "Quiet Rebel",
+    "description": "You are not always loud, but your thoughts rarely run with the current. You ask questions when others are silent, and feel uneasy when everyone agrees too easily."
+  },
+  "bridge_builder": {
+    "name": "Bridge Between Worlds",
+    "description": "You live at the crossing, between tradition and modernity, faith and reason, yourself and your community. You do not choose one side; you try to understand them all and become their link."
+  },
+  "guardian": {
+    "name": "The Guardian",
+    "description": "You keep what already exists, not out of fear of change, but because you know the worth of what time has tested. Your stability is a strength and an anchor for everyone around you."
+  },
+  "seeker": {
+    "name": "The Seeker",
+    "description": "You have not found your answer yet, and that is not weakness but a sign of your honesty. You keep moving, keep asking, keep opening to new possibilities. Your journey is not finished."
+  }
+}

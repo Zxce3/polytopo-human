@@ -1,0 +1,203 @@
+[
+  {
+    "id": "node_mxc001",
+    "stage": "childhood",
+    "text": "Kamu dua belas tahun, tinggal di kota kecil di Texas. Orang tuamu datang dari Michoacán, Meksiko. Ibu bekerja di dapur restoran, Ayah di konstruksi. Kamu menerjemahkan surat sekolah, tagihan, dan percakapan di klinik untuk mereka. Sore ini ada surat dari sekolah yang tampak resmi dan membuat Ibu pucat.",
+    "tags": [
+      "migrasi",
+      "bahasa",
+      "keluarga"
+    ],
+    "choices": [
+      {
+        "id": "choice_mxc001a",
+        "text": "Aku baca dan terjemahkan dengan jujur, termasuk bagian yang menakutkan.",
+        "next": "node_mxc002",
+        "traits": {
+          "collectivism": 1,
+          "rationalism": 1
+        }
+      },
+      {
+        "id": "choice_mxc001b",
+        "text": "Aku sederhanakan isinya supaya Ibu tidak cemas.",
+        "next": "node_mxc002",
+        "traits": {
+          "collectivism": 1,
+          "conformity": 1,
+          "authority": 1
+        }
+      },
+      {
+        "id": "choice_mxc001c",
+        "text": "Aku bilang aku capek jadi penerjemah dan butuh waktu sendiri.",
+        "next": "node_mxc003",
+        "traits": {
+          "individualism": 2,
+          "rebellion": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_mxc002",
+    "stage": "youth",
+    "text": "Surat itu ternyata undangan wawancara beasiswa program akademik. Ibu menatapmu lama lalu mengeluarkan kaleng berisi uang kecil yang selama ini ia simpan. \"Untuk sekolahmu,\" katanya. Kamu menyadari betapa banyak yang dipertaruhkan di setiap kata yang kamu terjemahkan.",
+    "tags": [
+      "pendidikan",
+      "pengorbanan",
+      "keluarga"
+    ],
+    "choices": [
+      {
+        "id": "choice_mxc002a",
+        "text": "Aku berjanji akan berusaha dan menjadi orang pertama di keluarga yang kuliah.",
+        "next": "node_mxc004",
+        "traits": {
+          "progress": 2,
+          "collectivism": 1,
+          "authority": 1
+        }
+      },
+      {
+        "id": "choice_mxc002b",
+        "text": "Aku takut mengecewakan mereka dan merasa beban itu berat.",
+        "next": "node_mxc004",
+        "traits": {
+          "conformity": 1,
+          "collectivism": 1,
+          "individualism": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_mxc003",
+    "stage": "youth",
+    "text": "Di sekolah, beberapa teman menyebutmu 'Meksiko' dengan nada mengejek, sementara di rumah sepupu memanggilmu 'pocho' karena bahasa Spanyolmu mulai kaku. Kamu bingung ada di mana. Nenek Maria dari lantai bawah mengajarimu memasak mole dan bercerita tentang desa di Michoacán.",
+    "tags": [
+      "identitas",
+      "bahasa",
+      "budaya"
+    ],
+    "choices": [
+      {
+        "id": "choice_mxc003a",
+        "text": "Aku belajar masak dan bahasa dari Nenek Maria dan mengundang teman-teman.",
+        "next": "node_mxc004",
+        "traits": {
+          "tradition": 1,
+          "collectivism": 1,
+          "freedom": 1
+        }
+      },
+      {
+        "id": "choice_mxc003b",
+        "text": "Aku berusaha menjadi 'Amerika' sepenuhnya supaya tidak ditertawakan.",
+        "next": "node_mxc004",
+        "traits": {
+          "conformity": 2,
+          "progress": 1,
+          "individualism": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_mxc004",
+    "stage": "adult",
+    "text": "Ayah kehilangan pekerjaan setelah razia di lokasi konstruksi. Dokumen keluarga belum lengkap dan kalian hidup dengan rasa cemas. Seorang pengacara sukarelawan menawarkan bantuan, tetapi juga mengingatkan risiko membuka kasus.",
+    "tags": [
+      "status",
+      "ketakutan",
+      "hukum"
+    ],
+    "choices": [
+      {
+        "id": "choice_mxc004a",
+        "text": "Aku dorong keluarga mengajukan kasus meski berisiko.",
+        "next": "node_mxc005",
+        "traits": {
+          "rebellion": 1,
+          "rationalism": 1,
+          "freedom": 1
+        }
+      },
+      {
+        "id": "choice_mxc004b",
+        "text": "Aku dukung keluarga menunggu dan berhati-hati, karena risikonya besar.",
+        "next": "node_mxc006",
+        "traits": {
+          "conformity": 2,
+          "authority": 1,
+          "collectivism": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "node_mxc005",
+    "stage": "elder",
+    "text": "Prosesnya panjang dan melelahkan, tetapi kamu menemukan komunitas orang yang menolong. Kamu kuliah hukum dan membantu keluarga imigran lain. Ibu tidak lagi menyembunyikan aksennya dan membuka katering kecil di rumah.",
+    "tags": [
+      "komunitas",
+      "hukum",
+      "harapan"
+    ],
+    "choices": [
+      {
+        "id": "choice_mxc005a",
+        "text": "Aku terus membantu keluarga lain menghadapi proses yang sama.",
+        "next": null,
+        "traits": {
+          "collectivism": 2,
+          "rebellion": 1,
+          "progress": 1
+        }
+      },
+      {
+        "id": "choice_mxc005b",
+        "text": "Aku mengambil jeda untuk keluargaku sendiri dulu.",
+        "next": null,
+        "traits": {
+          "collectivism": 1,
+          "individualism": 1,
+          "freedom": 1
+        }
+      }
+    ],
+    "isEnding": true
+  },
+  {
+    "id": "node_mxc006",
+    "stage": "elder",
+    "text": "Keluargamu hidup tenang, tetapi rapat dan waspada. Kamu bekerja sebagai guru dan membawa dua dapur dalam dirimu: salsa Ibu dan pizza di pesta sekolah. Kamu tahu menjadi dua hal sekaligus tidak berarti setengah dari masing-masing.",
+    "tags": [
+      "identitas",
+      "keluarga"
+    ],
+    "choices": [
+      {
+        "id": "choice_mxc006a",
+        "text": "Aku merayakan keduanya, tanpa meminta maaf.",
+        "next": null,
+        "traits": {
+          "freedom": 1,
+          "individualism": 1,
+          "collectivism": 1
+        }
+      },
+      {
+        "id": "choice_mxc006b",
+        "text": "Aku mengajarkan murid-muridku untuk menghargai dua bahasa.",
+        "next": null,
+        "traits": {
+          "progress": 1,
+          "collectivism": 1,
+          "tradition": 1
+        }
+      }
+    ],
+    "isEnding": true
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "node_tli001": {
+    "text": "You are seven, Deaf from birth, and at home only your older sibling can slowly read your lips. Your parents take you to speech therapy every afternoon. One day, in the park near home, you see two children talking with their hands, fast and alive. You stop and stare as if you had found a new country.",
+    "choices": {
+      "choice_tli001a": "I step closer and watch their hands move.",
+      "choice_tli001b": "I tug Mother's hand and point at them, asking us to join.",
+      "choice_tli001c": "I go back to Mother. Speech therapy is my task now."
+    }
+  },
+  "node_tli002": {
+    "text": "The two children, Dewi and Raka, teach you Bisindo, Indonesian Sign Language, on a park bench. Within a week you know your name in sign. At home Mother watches you signing to yourself in the mirror and her eyes fill. \"Why can't I join the conversation?\" she writes on paper.",
+    "choices": {
+      "choice_tli002a": "I teach Mother and my sibling one sign a day.",
+      "choice_tli002b": "I keep it as a world of my own. Mother does not understand yet."
+    }
+  },
+  "node_tli003": {
+    "text": "Speech therapy is exhausting. You imitate sounds you have never heard. The therapist praises you. A neighbor says, \"Thank goodness, almost normal now.\" You know the word hurts, though you do not know how to argue back.",
+    "choices": {
+      "choice_tli003a": "I keep practicing so people will not think I am different.",
+      "choice_tli003b": "I begin to ask why I must be 'almost normal' to be valued."
+    }
+  },
+  "node_tli004": {
+    "text": "At an inclusive junior high you sit in front with a sign language interpreter who is often late. Some classmates are kind; some mock you by imitating your signs. A history teacher, Pak Anton, learns signs from videos so he can greet you.",
+    "choices": {
+      "choice_tli004a": "I invite classmates to learn signs and start a small club.",
+      "choice_tli004b": "I demand the school provide a permanent interpreter through a formal letter."
+    }
+  },
+  "node_tli005": {
+    "text": "The sign club grows into a community at the university where you study design. With Dewi and Raka you build a Bisindo dictionary app. One day a mother writes that her Deaf child finally has a word for 'love'.",
+    "choices": {
+      "choice_tli005a": "I keep building spaces run by the Deaf community itself.",
+      "choice_tli005b": "I want the hearing world to learn, not for us to keep adapting."
+    }
+  },
+  "node_tli006": {
+    "text": "Your formal letter to the education office makes the news. The school provides an interpreter, and you are heard. But you are tired of being 'the face of the struggle'. Sometimes you just want to be a teenager joking with friends.",
+    "choices": {
+      "choice_tli006a": "I rest for a while. I am allowed to be ordinary.",
+      "choice_tli006b": "I continue, but with friends who share the load."
+    }
+  }
+}

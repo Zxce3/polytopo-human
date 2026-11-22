@@ -1,0 +1,89 @@
+{
+  "node_c001": {
+    "text": "You are eight years old. Your father is the respected head of the hamlet. One evening, as the sun is about to sink behind the banana trees, Father calls to you from the veranda. \"Come with me to the village hall, child. There is a deliberation about the rice-field irrigation.\" But you already promised your friends you would fly kites on the field.",
+    "choices": {
+      "choice_c001a": "I go with Father. The deliberation matters more.",
+      "choice_c001b": "I ask my friends' permission first, then join Father.",
+      "choice_c001c": "I go and play. Grown-up business is none of mine."
+    }
+  },
+  "node_c002": {
+    "text": "In the dim village hall the elders argue. Pak Sarno, an old farmer whose hands are rough as tree bark, says loudly: \"If that irrigation is built, my field will be the last to get water!\" The neighborhood head says the project is for the common good. Suddenly every eye turns to you, the only child in the room. The neighborhood head asks with a smile, \"What do you think, child?\"",
+    "choices": {
+      "choice_c002a": "\"The irrigation must go ahead. One person must not hold everyone else back.\"",
+      "choice_c002b": "\"Pak Sarno's worry is reasonable. There has to be a fair solution.\"",
+      "choice_c002c": "I stay silent. It is not my place to speak in a grown-ups' forum."
+    }
+  },
+  "node_c003": {
+    "text": "On the field, your red kite swoops across the dusky sky. The wind is perfect. But Dito, your naughtiest friend, suddenly cuts another boy's kite string on purpose. The kite belongs to Iwan, a small second-grader, who now stands there crying as his kite drifts away on the wind.",
+    "choices": {
+      "choice_c003a": "I scold Dito loudly. It is unfair to Iwan.",
+      "choice_c003b": "I say nothing. Dito is my close friend and I do not want a fight.",
+      "choice_c003c": "I go looking for Iwan's fallen kite, without a word."
+    }
+  },
+  "node_c004": {
+    "text": "Coming home from the village hall, Mother has dinner ready, warm rice and fried tempeh. After eating, Mother takes you to the children's Quran class at the village prayer house. The gentle teacher asks, \"How far have you got with your memorization, child? Let's try together.\" The small room smells of incense and is full of children's voices repeating verses.",
+    "choices": {
+      "choice_c004a": "I join in wholeheartedly. Religion is a foundation I must master.",
+      "choice_c004b": "I attend, but my mind drifts to the encyclopedia I have not finished."
+    }
+  },
+  "node_c005": {
+    "text": "The neighborhood head smiles at your opinion. \"You are clever, child. But a small child does not yet understand how complicated village matters are.\" The elders chuckle. Father looks proud but a little awkward. On the way home he says quietly, \"Next time, in a forum like that, let's follow the group's decision first. Then we talk privately afterwards.\"",
+    "choices": {
+      "choice_c005a": "I nod. Father surely knows the proper ways.",
+      "choice_c005b": "Inside I disagree, but I stay quiet and keep my opinion to myself."
+    }
+  },
+  "node_c006": {
+    "text": "Dito glares. \"Drama queen!\" he says, and stalks off proudly. But Iwan comes over, his eyes still red and his nose running. Without a word he sits beside you under the old mango tree. The two of you sit until the sun disappears behind the rooftops, talking about kites, dreams, and things Iwan has never told anyone.",
+    "choices": {
+      "choice_c006a": "This new friendship feels far more real than the old one.",
+      "choice_c006b": "I worry I have broken up the group. Maybe I should not have scolded Dito."
+    }
+  },
+  "node_c007": {
+    "text": "You stay quiet. The kites keep dancing. But on the way home the image of Iwan crying alone follows you. That night you cannot sleep. Staring at the dark ceiling, you ask yourself: why did I stay silent? Am I a coward, or is this simply how friendship works?",
+    "choices": {
+      "choice_c007a": "Tomorrow I will apologize to Iwan and talk to Dito calmly.",
+      "choice_c007b": "It is not my fault. I did nothing. That is what matters."
+    }
+  },
+  "node_c008": {
+    "text": "After the Quran class you find Father sitting on the veranda reading the Quran in a low voice. In the light of the oil lamp he looks like someone from another age, steady and calm. He turns and says without preamble, \"Tomorrow there is gotong royong to repair the village road. You will come.\" It is not a question; it is an invitation you cannot refuse.",
+    "choices": {
+      "choice_c008a": "\"Yes, Father. Gotong royong is our duty as villagers.\"",
+      "choice_c008b": "\"I want to come, but I have a school exam tomorrow, Father. May I study first?\""
+    }
+  },
+  "node_c009": {
+    "text": "You find an old encyclopedia on the shelf of Uncle, who is visiting, full of pictures of dinosaurs, star diagrams, and how steam engines work. It feels like finding a secret door to another world. You read until late at night under the blanket with a small flashlight, until Mother comes in and turns off your light. \"Sleep, child. The book is not going anywhere.\"",
+    "choices": {
+      "choice_c009a": "I ask Uncle to buy me similar books. This is what I have been looking for.",
+      "choice_c009b": "I keep the book as my own small secret that nobody needs to know."
+    }
+  },
+  "node_c010": {
+    "text": "A long dry season comes. The village wells begin to dry up. The neighborhood head announces a strict rotation for taking water. But some neighbors grow envious of one another. One night, through your thin bedroom wall, you hear Mother whisper to Father: \"Haji Umar's family takes more than its share of water.\" Father only sighs deeply.",
+    "choices": {
+      "choice_c010a": "I pretend I did not hear. It is none of my business.",
+      "choice_c010b": "The next day I ask Father why he does not report it to the neighborhood head."
+    }
+  },
+  "node_c011": {
+    "text": "Time passes. You grow into a child known as obedient, polite, and liked by the elders. Teachers praise you in front of the class. Neighbors often tell Mother, \"Your child is so good, ma'am.\" But in the quiet of night, when everyone is asleep, there is something like a question you have never dared to ask, something that rests unspoken on the tip of your tongue.",
+    "choices": {
+      "choice_c011a": "The question can wait. I am still small, and that is enough.",
+      "choice_c011b": "One day I will find, and ask, the answer."
+    }
+  },
+  "node_c012": {
+    "text": "You grow into a child who always has questions. \"Why?\" is the word you say most. Some teachers like it; others find you impatient and presumptuous. Father once said wearily, \"A child who asks too many questions can make trouble for himself.\" But Mother only smiled and whispered, \"Curiosity is a gift, not a problem.\"",
+    "choices": {
+      "choice_c012a": "Maybe Father is right. Asking too much will only make things hard for me.",
+      "choice_c012b": "I trust Mother. My questions are the most precious thing about me."
+    }
+  }
+}

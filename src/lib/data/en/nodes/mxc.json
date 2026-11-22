@@ -1,0 +1,45 @@
+{
+  "node_mxc001": {
+    "text": "You are twelve, living in a small town in Texas. Your parents came from Michoacán, Mexico. Mother works in a restaurant kitchen, Father in construction. You translate school letters, bills, and clinic conversations for them. This afternoon a letter arrives from school that looks official and turns Mother pale.",
+    "choices": {
+      "choice_mxc001a": "I read it and translate honestly, including the frightening part.",
+      "choice_mxc001b": "I simplify it so Mother will not worry.",
+      "choice_mxc001c": "I say I am tired of being the translator and need time alone."
+    }
+  },
+  "node_mxc002": {
+    "text": "The letter turns out to be an invitation to an interview for an academic scholarship program. Mother looks at you a long while, then brings out a tin of small bills she has been saving. \"For your schooling,\" she says. You realize how much rides on every word you translate.",
+    "choices": {
+      "choice_mxc002a": "I promise to try and to be the first in the family to go to college.",
+      "choice_mxc002b": "I am afraid of letting them down and the burden feels heavy."
+    }
+  },
+  "node_mxc003": {
+    "text": "At school some kids call you 'Mexican' as a taunt, while at home cousins call you 'pocho' because your Spanish is getting stiff. You are confused about where you belong. Grandma Maria from downstairs teaches you to cook mole and tells you about the village in Michoacán.",
+    "choices": {
+      "choice_mxc003a": "I learn cooking and language from Grandma Maria and invite friends over.",
+      "choice_mxc003b": "I try to become fully 'American' so I will not be laughed at."
+    }
+  },
+  "node_mxc004": {
+    "text": "Father loses his job after a raid at the construction site. The family's papers are incomplete and you live with anxiety. A volunteer lawyer offers help but also warns of the risks of opening a case.",
+    "choices": {
+      "choice_mxc004a": "I push the family to file a case despite the risk.",
+      "choice_mxc004b": "I support the family waiting and being careful, because the risk is great."
+    }
+  },
+  "node_mxc005": {
+    "text": "The process is long and exhausting, but you find a community of people who help. You study law and help other immigrant families. Mother no longer hides her accent and opens a small catering business at home.",
+    "choices": {
+      "choice_mxc005a": "I keep helping other families through the same process.",
+      "choice_mxc005b": "I take a break for my own family first."
+    }
+  },
+  "node_mxc006": {
+    "text": "Your family lives quietly but guarded and close. You work as a teacher and carry two kitchens within you: Mother's salsa and pizza at the school party. You know being two things at once does not mean being half of each.",
+    "choices": {
+      "choice_mxc006a": "I celebrate both, without apologizing.",
+      "choice_mxc006b": "I teach my students to respect two languages."
+    }
+  }
+}

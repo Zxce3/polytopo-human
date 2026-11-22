@@ -1,0 +1,45 @@
+{
+  "node_bnt001": {
+    "text": "You are eleven, living in a semi-permanent house on a Jakarta riverbank. Your mother, Bu Ratna, sells nasi uduk from dawn until noon, alone since Father left. You are the eldest of three. This morning your younger sibling has a fever and Mother must still go to sell. \"If you skip school, no one will watch them,\" she says quietly.",
+    "choices": {
+      "choice_bnt001a": "I skip school today and look after my siblings.",
+      "choice_bnt001b": "I ask the neighbor, Bu Sum, to watch them so I can still go to school.",
+      "choice_bnt001c": "I say I am tired and angry, why must it always be me who gives way."
+    }
+  },
+  "node_bnt002": {
+    "text": "Bu Sum comes with porridge and a cool compress, and neighbors take turns watching the children. In that narrow alley everyone knows everyone's troubles. Some help, some gossip. You learn that kindness and gossip can be born in the same house.",
+    "choices": {
+      "choice_bnt002a": "I repay their kindness by helping deliver orders.",
+      "choice_bnt002b": "I start wanting to leave this alley as soon as possible."
+    }
+  },
+  "node_bnt003": {
+    "text": "At school the teacher scolds you for being sleepy and often late. A counseling teacher, Bu Dian, quietly calls you over and offers an afternoon study-help program. You are ashamed to accept, but you do not want to stay behind forever either.",
+    "choices": {
+      "choice_bnt003a": "I accept the help and start joining the afternoon class.",
+      "choice_bnt003b": "I refuse. I do not want pity, I will study on my own."
+    }
+  },
+  "node_bnt004": {
+    "text": "A great flood comes. Your house is submerged. The government offers relocation to a public apartment block, far from Mother's customers. The neighbors split between agreeing, refusing, and wavering. Mother looks at you. \"You are grown now. What do you think?\"",
+    "choices": {
+      "choice_bnt004a": "I rally the residents to negotiate together.",
+      "choice_bnt004b": "I support moving. Living on the riverbank is too risky."
+    }
+  },
+  "node_bnt005": {
+    "text": "You and the residents form an association, draft demands, and finally win a fairer deal: relocation with trading stalls. You become a respected young social worker. Sometimes you miss that narrow alley where everyone knew your name.",
+    "choices": {
+      "choice_bnt005a": "I keep supporting other residents facing eviction.",
+      "choice_bnt005b": "I want to go to university and study law to defend people from the inside."
+    }
+  },
+  "node_bnt006": {
+    "text": "In the apartment block Mother opens a small stall under a new name. You graduate on a scholarship and work at a logistics company. Every Sunday you go home with groceries. You are no longer the eldest forced to grow up early, but the habit of caring stays with you.",
+    "choices": {
+      "choice_bnt006a": "I accept that caring for family is part of who I am.",
+      "choice_bnt006b": "I learn to say no and to look after myself too."
+    }
+  }
+}

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import { gameStore } from '$lib/stores/gameStore.svelte';
 	import { getPairBalance, getDominantTraits } from '$lib/engine/traitCalculator';
 	import { langStore } from '$lib/i18n/lang.svelte';
@@ -12,7 +13,7 @@
 	import AmbientShape from '$lib/components/AmbientShape.svelte';
 
 	onMount(() => {
-		if (gameStore.session.choicesMade.length === 0) goto('/');
+		if (gameStore.session.choicesMade.length === 0) goto(`${base}/`);
 	});
 
 	const traitDefs = traitsData.traits;
@@ -121,10 +122,10 @@
 		</div>
 
 		<div class="flex flex-wrap gap-x-8 gap-y-3 text-sm font-sans text-stone-300">
-			<button type="button" onclick={() => { gameStore.reset(); goto('/'); }} class="underline underline-offset-4 decoration-stone-600 hover:text-white py-1">
+			<button type="button" onclick={() => { gameStore.reset(); goto(`${base}/`); }} class="underline underline-offset-4 decoration-stone-600 hover:text-white py-1">
 				{langStore.t.playAgain}
 			</button>
-			<button type="button" onclick={() => goto('/stories')} class="underline underline-offset-4 decoration-stone-600 hover:text-white py-1">
+			<button type="button" onclick={() => goto(`${base}/stories/`)} class="underline underline-offset-4 decoration-stone-600 hover:text-white py-1">
 				{langStore.t.chooseStory}
 			</button>
 			<button type="button" onclick={copySummary} class="underline underline-offset-4 decoration-stone-600 hover:text-white py-1">

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { gameStore } from '$lib/stores/gameStore.svelte';
 	import { STAGE_ORDER } from '$lib/engine/gameEngine';
 	import { langStore } from '$lib/i18n/lang.svelte';
@@ -105,7 +106,7 @@
 			{#if !node}
 				<div class="text-center">
 					<p class="font-serif text-xl text-stone-300 mb-6">{langStore.t.emptyTitle}</p>
-					<a href="/stories" class="underline underline-offset-4 text-stone-300 hover:text-white">
+					<a href="{base}/stories/" class="underline underline-offset-4 text-stone-300 hover:text-white">
 						{langStore.t.emptyAction}
 					</a>
 				</div>
@@ -174,7 +175,7 @@
 			<div class="flex flex-wrap items-center gap-x-4 gap-y-0 whitespace-nowrap">
 				<SoundControl />
 				<LangToggle />
-				<a href="/stories" class="py-2 hover:text-stone-200 focus-visible:text-stone-200">{langStore.t.chooseStory}</a>
+				<a href="{base}/stories/" class="py-2 hover:text-stone-200 focus-visible:text-stone-200">{langStore.t.chooseStory}</a>
 				<button type="button" onclick={() => gameStore.reset()} class="py-2 hover:text-stone-200 focus-visible:text-stone-200">
 					{langStore.t.restart}
 				</button>

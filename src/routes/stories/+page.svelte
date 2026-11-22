@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import { gameStore, localizedStories } from '$lib/stores/gameStore.svelte';
 	import { langStore } from '$lib/i18n/lang.svelte';
 	import { THEMES, DEFAULT_THEME } from '$lib/theme';
@@ -7,7 +8,7 @@
 
 	function begin(start: string): void {
 		gameStore.startStory(start);
-		goto('/');
+		goto(`${base}/`);
 	}
 </script>
 
@@ -40,7 +41,7 @@
 				</li>
 			{/each}
 		</ul>
-		<a href="/" class="inline-block mt-10 text-[11px] uppercase tracking-[0.2em] text-stone-400 hover:text-stone-100 py-2">
+		<a href="{base}/" class="inline-block mt-10 text-[11px] uppercase tracking-[0.2em] text-stone-400 hover:text-stone-100 py-2">
 			{langStore.t.back}
 		</a>
 	</main>

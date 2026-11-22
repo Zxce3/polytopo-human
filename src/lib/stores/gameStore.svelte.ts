@@ -1,5 +1,6 @@
 import { browser } from '$app/environment';
 import { goto } from '$app/navigation';
+import { base } from '$app/paths';
 import { GameEngine } from '$lib/engine/gameEngine';
 import type { GameSession, GameNode, ProfileDefinition } from '$lib/types/game';
 
@@ -98,7 +99,7 @@ class GameStore {
 				completedAt: new Date().toISOString(),
 				finalProfile: profile?.name,
 			};
-			goto('/summary');
+			goto(`${base}/summary/`);
 		}
 	}
 

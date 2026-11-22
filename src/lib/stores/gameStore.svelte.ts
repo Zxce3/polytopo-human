@@ -58,6 +58,23 @@ class GameStore {
 		);
 	}
 
+	get currentStory() {
+		return stories.find((x) => x.start === this.session.pathTaken[0]);
+	}
+
+	/** The choices made so far, as readable text in the current language. */
+	get journey(): { stage: string; text: string }[] {
+		const out: { stage: string; text: string }[] = [];
+		this.session.choicesMade.forEach((choiceId, i) => {
+			const node = engine.getNode(this.session.pathTaken[i]);
+			const choice = node?.choices.find((c) => c.id === choiceId);
+			if (!node || !choice) return;
+			const [c] = localizeChoices([choice], node.id, langStore.lang);
+			out.push({ stage: node.stage, text: c.text });
+		});
+		return out;
+	}
+
 	get currentProfile(): ProfileDefinition | null {
 		return localizeProfile(engine.computeProfile(this.session.traits), langStore.lang);
 	}

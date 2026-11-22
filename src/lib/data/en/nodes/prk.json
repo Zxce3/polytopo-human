@@ -1,0 +1,45 @@
+{
+  "node_prk001": {
+    "text": "You are ten, living in the workers' row houses on a rubber estate in Perak, Malaysia. Your father taps rubber before dawn. At Deepavali your mother lights the lamps and Pak Hassan, the Malay foreman, comes by with kuih. At the small Tamil school your teacher says pupils must learn Malay and English to get ahead.",
+    "choices": {
+      "choice_prk001a": "I study Malay and English hard so I can go to university.",
+      "choice_prk001b": "I stay focused on Tamil. It is my mother tongue and our prayer language.",
+      "choice_prk001c": "I help Father in the rubber garden on Saturdays so he does not work alone."
+    }
+  },
+  "node_prk002": {
+    "text": "Your teacher, Cikgu Lakshmi, takes you to a three-language speech contest. You are nervous, but your classmates' cheers make you brave. At the larger secondary school there are students from many ethnic groups. You feel like both a bridge and an outsider.",
+    "choices": {
+      "choice_prk002a": "I seek friends from every background and learn their cultures.",
+      "choice_prk002b": "I join a group of fellow Indian-descent students because it feels safe."
+    }
+  },
+  "node_prk003": {
+    "text": "The estate is sold for housing. Families are given a year to move. Father has tapped rubber for thirty years. He stands silent before the rubber trees, not knowing where to go. That year's Deepavali lamps feel brighter and quieter.",
+    "choices": {
+      "choice_prk003a": "I help Father look for a new home and job in the city.",
+      "choice_prk003b": "I join the residents in protesting and demanding fair compensation."
+    }
+  },
+  "node_prk004": {
+    "text": "The family moves to a flat on the outskirts of Ipoh. You pass your exams and win a place at university, but cost and distance are obstacles. A relative offers a steady job in his shop in Singapore.",
+    "choices": {
+      "choice_prk004a": "I go to university on a loan, though it is hard.",
+      "choice_prk004b": "I go to work in Singapore and send money to my family."
+    }
+  },
+  "node_prk005": {
+    "text": "You graduate as a civil engineer and design affordable housing on former estate land. Every Thaipusam you return to the temple and feel the past and present meet. You wonder whether you are building homes for people like your family or erasing their traces.",
+    "choices": {
+      "choice_prk005a": "I make the project a space for workers' families.",
+      "choice_prk005b": "I write about the estate's history so it is not forgotten."
+    }
+  },
+  "node_prk006": {
+    "text": "In Singapore you work for years, sending money and keeping Mother's recipes in a small notebook. You return to Perak when Father is old and find the last rubber tree in the old garden still standing. You sit beneath it with a feeling that has no single name.",
+    "choices": {
+      "choice_prk006a": "I stay and look after my parents. I start again in the village.",
+      "choice_prk006b": "I go back to Singapore. That place is also home now."
+    }
+  }
+}

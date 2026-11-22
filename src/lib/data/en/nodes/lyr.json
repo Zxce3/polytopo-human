@@ -1,0 +1,45 @@
+{
+  "node_lyr001": {
+    "text": "You are ten, living in a stilt house on the coast of Bone. At dawn Father is stitching a boat sail with a big needle while Grandmother prepares black coffee. \"The ancestors' pappaseng says: the sea never deceives those who know their place,\" says Father. Today he is taking you to sea for the first time, even though you have a math test at school.",
+    "choices": {
+      "choice_lyr001a": "I go to sea with Father. The sea is my first school.",
+      "choice_lyr001b": "I ask Father to wait until the test is over, and go to sea in the afternoon.",
+      "choice_lyr001c": "I go to school. Father cannot force me."
+    }
+  },
+  "node_lyr002": {
+    "text": "Out at sea the waves rise and Father reads the sky, not any instrument. He points at a thin cloud in the west. \"We go home before noon prayer.\" You see how knowledge that was never written down saves a small boat. At the dock a middleman haggles over the fish at a price that leaves Father silent for a long time.",
+    "choices": {
+      "choice_lyr002a": "I want to learn to read the sky like Father.",
+      "choice_lyr002b": "I ask why the price of our fish is always set by someone else."
+    }
+  },
+  "node_lyr003": {
+    "text": "Your math teacher, Bu Rahmi, praises your grades and mentions a scholarship to a top junior high in Makassar. At home you tell them. Father stares at the net in his hands. Grandmother says quietly, \"A Bone boy must never forget the road home.\" Mother hides a smile and a worry at once.",
+    "choices": {
+      "choice_lyr003a": "I will take the scholarship and promise to come home every holiday.",
+      "choice_lyr003b": "I cannot leave Father, who is getting older. I will postpone it."
+    }
+  },
+  "node_lyr004": {
+    "text": "Years pass. You become an adult with two languages inside you: Bugis at home, Indonesian in the city. A fisheries company offers you a permanent job in Makassar with a large salary. At the same time Father is ill and the fishers' cooperative in the village is nearly collapsing under debt to the middlemen.",
+    "choices": {
+      "choice_lyr004a": "I go home and try to build up the cooperative with what I have learned.",
+      "choice_lyr004b": "I take the job and send money to the family every month."
+    }
+  },
+  "node_lyr005": {
+    "text": "The cooperative grows slowly, with long meetings and quarrels. Young people in the village begin to ask whether they need the sea or a phone. In your old age you sit on the same dock, stitching a new sail, and a small child waits for a turn to hold the needle.",
+    "choices": {
+      "choice_lyr005a": "I teach them the sea and also how to count profit and loss.",
+      "choice_lyr005b": "I let them choose their own path, as I once did."
+    }
+  },
+  "node_lyr006": {
+    "text": "The city gives you a home, a new language, and distance from the village. You come back at Lebaran and your Bugis sounds stiff to your own nephew. On the dock, Father, now frail, asks whether you are happy with the path you chose.",
+    "choices": {
+      "choice_lyr006a": "I am happy, but part of me always stays behind here.",
+      "choice_lyr006b": "I will start learning my language and my sea again. It is not too late."
+    }
+  }
+}

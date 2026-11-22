@@ -1,0 +1,45 @@
+{
+  "node_ptn001": {
+    "text": "You are nine, living in a village near Pattani in southern Thailand. At home you speak Pattani Malay, but at the state school every lesson is in Thai. Today the teacher asks you to sing the Thai national anthem and swap your blue uniform headscarf for the class cap. You freeze. Grandmother always says the headscarf is part of who you are.",
+    "choices": {
+      "choice_ptn001a": "I politely ask the teacher whether I may keep my headscarf.",
+      "choice_ptn001b": "I follow the school rules and tell Grandmother later.",
+      "choice_ptn001c": "I refuse to take off my headscarf and accept the consequences."
+    }
+  },
+  "node_ptn002": {
+    "text": "The teacher, Khru Somsri, turns out to be kind and embarrassed by the question. She says she will talk to the principal. Some Buddhist classmates are curious and ask about fasting. You teach them to count the days of Ramadan, and they teach you to make little prayer pouches from cloth, without exchanging faiths.",
+    "choices": {
+      "choice_ptn002a": "I swap stories with them every break.",
+      "choice_ptn002b": "I keep my distance. I am afraid of losing myself."
+    }
+  },
+  "node_ptn003": {
+    "text": "That afternoon you study Quran recitation at the pondok near home. Tok Guru teaches you Jawi script and hikayat. On the way home soldiers patrol at the checkpoint. You are used to the sandbags, but never to how the grown-ups stop talking when they pass.",
+    "choices": {
+      "choice_ptn003a": "I ask Father what is happening in our region.",
+      "choice_ptn003b": "I learn to bow my head and pray. We only want to live in peace."
+    }
+  },
+  "node_ptn004": {
+    "text": "You are a teenager and pass the national exam with high marks. There is a university scholarship in Bangkok, far from the village. But in Bangkok you risk living without community, without halal food or a prayer room. Your parents are torn between pride and worry.",
+    "choices": {
+      "choice_ptn004a": "I take the scholarship and prepare to keep my identity in a strange place.",
+      "choice_ptn004b": "I study at a university near Pattani so I can stay close to family."
+    }
+  },
+  "node_ptn005": {
+    "text": "In Bangkok you become a medical student. You learn refined Thai, yet still sing Grandmother's lullabies in Malay. After graduating you choose to return to Pattani as a doctor, with two languages on your tongue and two worlds you stitch together patiently.",
+    "choices": {
+      "choice_ptn005a": "I become the link between village patients and the state health system.",
+      "choice_ptn005b": "I write about our experiences in two languages."
+    }
+  },
+  "node_ptn006": {
+    "text": "You become a teacher at a school near home, teaching Malay and Thai children together. In your classroom the blue headscarf and the uniform cap sit side by side. You know peace is not a big word but a small lesson repeated every morning.",
+    "choices": {
+      "choice_ptn006a": "I will keep this classroom a safe space for everyone.",
+      "choice_ptn006b": "I want a curriculum that includes our history and language."
+    }
+  }
+}

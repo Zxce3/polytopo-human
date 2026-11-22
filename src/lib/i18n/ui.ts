@@ -1,0 +1,61 @@
+export type Lang = 'id' | 'en';
+export const LANGS: Lang[] = ['id', 'en'];
+
+export const UI = {
+	id: {
+		siteTitle: 'Polytopo Human',
+		siteDescription:
+			'Gim naratif berbasis pilihan tentang bagaimana lingkungan, pengasuhan, dan konteks membentuk identitas manusia.',
+		ogDescription: 'Gim naratif berbasis pilihan tentang pembentukan identitas manusia.',
+		pageDescription: 'Sebuah perjalanan naratif tentang identitas manusia.',
+		stages: { childhood: 'Masa Kecil', youth: 'Remaja', adult: 'Dewasa', elder: 'Tua' },
+		choicesCount: (n: number) => `${n} pilihan`,
+		chooseStory: 'pilih kisah',
+		restart: 'ulang',
+		languageLabel: 'Bahasa',
+		pickerTitle: 'Pilih kisah',
+		pickerIntro:
+			'Setiap kisah dimulai dari latar yang berbeda. Memulai kisah baru menggantikan kemajuanmu saat ini.',
+		pickerMeta: 'Pilih satu kisah hidup dari berbagai latar budaya, daerah, dan keluarga.',
+		back: 'kembali',
+		summaryTitle: 'Profil',
+		summaryKicker: 'Polytopo Human · Profil Identitasmu',
+		fallbackProfile: 'Sang Pencari',
+		valueMap: 'Peta Nilai',
+		journey: 'Jejak Perjalanan',
+		choicesMade: (n: number) => `${n} pilihan dibuat`,
+		started: 'dimulai',
+		finished: 'selesai',
+		playAgain: 'main lagi',
+		download: 'unduh data sesi',
+		dateLocale: 'id-ID',
+	},
+	en: {
+		siteTitle: 'Polytopo Human',
+		siteDescription:
+			'A choice-driven narrative game about how environment, upbringing, and context shape human identity.',
+		ogDescription: 'A choice-driven narrative game about how human identity is formed.',
+		pageDescription: 'A narrative journey about human identity.',
+		stages: { childhood: 'Childhood', youth: 'Youth', adult: 'Adulthood', elder: 'Elder years' },
+		choicesCount: (n: number) => (n === 1 ? '1 choice' : `${n} choices`),
+		chooseStory: 'choose a story',
+		restart: 'restart',
+		languageLabel: 'Language',
+		pickerTitle: 'Choose a story',
+		pickerIntro:
+			'Each story begins from a different setting. Starting a new story replaces your current progress.',
+		pickerMeta: 'Pick a life story from many cultures, regions, and families.',
+		back: 'back',
+		summaryTitle: 'Profile',
+		summaryKicker: 'Polytopo Human · Your Identity Profile',
+		fallbackProfile: 'The Seeker',
+		valueMap: 'Value Map',
+		journey: 'Path Taken',
+		choicesMade: (n: number) => (n === 1 ? '1 choice made' : `${n} choices made`),
+		started: 'started',
+		finished: 'finished',
+		playAgain: 'play again',
+		download: 'download session data',
+		dateLocale: 'en-GB',
+	},
+} as const;

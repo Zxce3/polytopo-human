@@ -1,0 +1,45 @@
+{
+  "node_flr001": {
+    "text": "You are eight, in a village in Flores. Your mother works in Hong Kong as a domestic worker, and you live with Grandmother and your uncle. Every Sunday night, after Mass, Grandmother's phone rings and Mother's face appears on the cracked screen. \"How is school, child?\" she asks, her voice breaking up.",
+    "choices": {
+      "choice_flr001a": "I tell Mother everything, including the sad parts.",
+      "choice_flr001b": "I say everything is fine so Mother will not worry.",
+      "choice_flr001c": "I look down. I do not want to talk, I want Mother to come home."
+    }
+  },
+  "node_flr002": {
+    "text": "Grandmother teaches you the rosary and customary stories about the ancestors in the garden. She says prayer and custom do not quarrel in her house. She picks corn in the small field and whispers, \"Your mother is planting for us in a faraway place.\" You feel two kinds of faith and work that connect to each other.",
+    "choices": {
+      "choice_flr002a": "I pray with Grandmother each night and learn the customary stories.",
+      "choice_flr002b": "I am more interested in her field work than her prayers."
+    }
+  },
+  "node_flr003": {
+    "text": "Uncle is angry. \"Your mother sends money but she is not here.\" You listen, then see that money replace the tin roof of the house. At school the teacher asks who your parents are and friends call you 'a maid's kid' (anak TKW). You carry that word home.",
+    "choices": {
+      "choice_flr003a": "I proudly say that my mother works hard.",
+      "choice_flr003b": "I begin hiding my mother's job from my friends."
+    }
+  },
+  "node_flr004": {
+    "text": "You are a teenager. Mother comes home for the first time in seven years, thin and unfamiliar, with gifts that no longer fit you. You are awkward together. She wants to stay, but her contract has a year left and your younger sibling needs school fees.",
+    "choices": {
+      "choice_flr004a": "I ask Mother to stay. I will work and help my sibling.",
+      "choice_flr004b": "I tell Mother she may go back. I understand, and I will study hard."
+    }
+  },
+  "node_flr005": {
+    "text": "You leave school for a time to work on the farm and in the shop. Mother stays and slowly you learn to know each other. You later found a cocoa farmers' group in the village so women need not go far away to work.",
+    "choices": {
+      "choice_flr005a": "I build the farmers' group with Mother and Grandmother as advisers.",
+      "choice_flr005b": "I save so my sibling can continue to university. My dream comes later."
+    }
+  },
+  "node_flr006": {
+    "text": "You become a nurse and work at a hospital in Kupang, then receive an offer abroad. Mother holds your hand. \"This time you decide,\" she says. You know what distance means: a cracked screen joining two worlds.",
+    "choices": {
+      "choice_flr006a": "I take the offer and promise to call every Sunday night.",
+      "choice_flr006b": "I stay near family. I know the price of distance."
+    }
+  }
+}

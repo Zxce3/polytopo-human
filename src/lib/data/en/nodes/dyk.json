@@ -1,0 +1,45 @@
+{
+  "node_dyk001": {
+    "text": "You are twelve, living in a village on the banks of the Kahayan River. Your family follows Kaharingan, the ancestral faith of the Dayak Ngaju. Your grandfather has just died, and the family is preparing for a tiwah funeral ceremony in a few years. At school the religion column on your report card offers only six options, and Kaharingan is recorded as 'Hindu'. You ask why.",
+    "choices": {
+      "choice_dyk001a": "I ask Father. I want to know why our faith's name was changed.",
+      "choice_dyk001b": "I ask Grandmother about Kaharingan, not about the report card.",
+      "choice_dyk001c": "I let it go. What matters is that I can go to school."
+    }
+  },
+  "node_dyk002": {
+    "text": "Father explains the history slowly: Kaharingan was recognized under another religion's umbrella so it could have civil rights. \"The name may change, but we know who we are.\" He teaches you to pray to Ranying Hatalla Langit and to treat the forest as something sacred.",
+    "choices": {
+      "choice_dyk002a": "I will keep this faith and truly learn the Ngaju language.",
+      "choice_dyk002b": "I will study law so I can help the community claim its rights."
+    }
+  },
+  "node_dyk003": {
+    "text": "Grandmother takes you into the forest and shows you the trees where the family gathers honey and rattan. She explains the customary rules about what may be taken and when. In the distance you hear chainsaws and the trucks of a palm-oil company clearing land.",
+    "choices": {
+      "choice_dyk003a": "I write down Grandmother's customary rules so they are not lost.",
+      "choice_dyk003b": "I ask whether we can resist that company."
+    }
+  },
+  "node_dyk004": {
+    "text": "You are a teenager and a company offers villagers compensation to clear part of the customary forest. Some villagers agree because the money is real. Some refuse. Your family splits, and an uncle who is usually friendly no longer greets Father.",
+    "choices": {
+      "choice_dyk004a": "I join the customary meeting and urge the villagers to refuse together.",
+      "choice_dyk004b": "I push for negotiation so villagers get a fair partnership."
+    }
+  },
+  "node_dyk005": {
+    "text": "The villagers refuse, and the conflict lasts years. You become an activist mapping customary territory, carrying a GPS and an old notebook into the forest with the elders. When the tiwah is finally held the whole village attends, and you look at the sky with a bitter relief.",
+    "choices": {
+      "choice_dyk005a": "I will keep guarding our forest and our ceremonies.",
+      "choice_dyk005b": "I will take our story into national policy spaces."
+    }
+  },
+  "node_dyk006": {
+    "text": "The partnership scheme goes ahead, with many compromises. The villagers' rubber gardens survive and part of the forest is protected. You work as a go-between for the company, the government, and the village, sometimes distrusted by both sides. You know that being a bridge often means being stepped on from both sides.",
+    "choices": {
+      "choice_dyk006a": "I persevere. Small changes still matter.",
+      "choice_dyk006b": "I go back to the village and help young people learn custom."
+    }
+  }
+}

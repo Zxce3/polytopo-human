@@ -4,11 +4,17 @@
 
 	import { langStore } from '$lib/i18n/lang.svelte';
 	import { onMount } from 'svelte';
+	import { soundStore } from '$lib/audio.svelte';
+	import { gameStore } from '$lib/stores/gameStore.svelte';
 
 	let { children } = $props();
 
 	onMount(() => {
 		langStore.init();
+		soundStore.init();
+	});
+	$effect(() => {
+		soundStore.setTheme(gameStore.currentStory?.id);
 	});
 	$effect(() => {
 		document.documentElement.lang = langStore.lang;

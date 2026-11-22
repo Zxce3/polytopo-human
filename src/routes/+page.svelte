@@ -3,7 +3,7 @@
 	import { STAGE_ORDER } from '$lib/engine/gameEngine';
 	import { langStore } from '$lib/i18n/lang.svelte';
 	import { themeStyle, THEMES, DEFAULT_THEME } from '$lib/theme';
-	import { ambientOn, ambientOff } from '$lib/audio';
+	import SoundControl from '$lib/components/SoundControl.svelte';
 	import LangToggle from '$lib/components/LangToggle.svelte';
 	import { onMount } from 'svelte';
 
@@ -12,15 +12,11 @@
 	let ready = $state(false);
 	let skipped = $state(false);
 	let chosen = $state<string | null>(null);
-	let sound = $state(false);
 	let timer: ReturnType<typeof setTimeout> | undefined;
 
 	onMount(() => {
 		reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-		return () => {
-			clearTimeout(timer);
-			ambientOff();
-		};
+		return () => clearTimeout(timer);
 	});
 
 	let node = $derived(gameStore.currentNode);
@@ -73,11 +69,6 @@
 		}
 	}
 
-	function toggleSound(): void {
-		sound = !sound;
-		if (sound) ambientOn(theme.hz);
-		else ambientOff();
-	}
 </script>
 
 <svelte:window onkeydown={onKey} />
@@ -181,15 +172,7 @@
 		<div class="max-w-[38rem] mx-auto flex flex-wrap justify-between items-center gap-x-4 gap-y-2 text-[10px] uppercase tracking-[0.2em] text-stone-500">
 			<span>{langStore.t.choicesCount(gameStore.session.choicesMade.length)}</span>
 			<div class="flex items-center gap-4">
-				<button
-					type="button"
-					onclick={toggleSound}
-					aria-pressed={sound}
-					title={langStore.t.soundHint}
-					class="py-2 hover:text-stone-200 focus-visible:text-stone-200"
-				>
-					{sound ? langStore.t.soundOff : langStore.t.soundOn}
-				</button>
+				<SoundControl />
 				<LangToggle />
 				<a href="/stories" class="py-2 hover:text-stone-200 focus-visible:text-stone-200">{langStore.t.chooseStory}</a>
 				<button type="button" onclick={() => gameStore.reset()} class="py-2 hover:text-stone-200 focus-visible:text-stone-200">

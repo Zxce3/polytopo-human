@@ -7,6 +7,7 @@
 	import { traitLabel } from '$lib/i18n/content';
 	import { themeStyle } from '$lib/theme';
 	import traitsData from '$lib/data/traits.json';
+	import SoundControl from '$lib/components/SoundControl.svelte';
 	import LangToggle from '$lib/components/LangToggle.svelte';
 	import AmbientShape from '$lib/components/AmbientShape.svelte';
 
@@ -61,7 +62,7 @@
 
 <div class="stage min-h-screen text-stone-100 px-6 py-12 sm:py-16" style={themeStyle(gameStore.currentStory?.id)}>
 	<div class="scene max-w-[38rem] mx-auto">
-		<div class="flex justify-end mb-6"><LangToggle /></div>
+		<div class="flex justify-end items-center gap-4 mb-6 text-[10px] uppercase tracking-[0.2em] text-stone-500"><SoundControl /><LangToggle /></div>
 
 		<div class="mb-12">
 			<p class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-4 font-sans">

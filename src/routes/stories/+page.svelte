@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import { gameStore, stories } from '$lib/stores/gameStore.svelte';
+	import { gameStore, localizedStories } from '$lib/stores/gameStore.svelte';
+
+	import { langStore } from '$lib/i18n/lang.svelte';
+	import LangToggle from '$lib/components/LangToggle.svelte';
 
 	function begin(start: string): void {
 		gameStore.startStory(start);
@@ -9,21 +12,20 @@
 </script>
 
 <svelte:head>
-	<title>Pilih Kisah — Polytopo Human</title>
+	<title>{langStore.t.pickerTitle} — Polytopo Human</title>
 	<meta
 		name="description"
-		content="Pilih satu kisah hidup dari berbagai latar budaya, daerah, dan keluarga."
+		content={langStore.t.pickerMeta}
 	/>
 </svelte:head>
 
 <div class="min-h-screen bg-stone-950 text-stone-100 px-6 py-16">
 	<main class="max-w-xl mx-auto">
-		<h1 class="font-serif text-2xl text-stone-200 mb-2">Pilih kisah</h1>
-		<p class="font-sans text-sm text-stone-500 mb-10">
-			Setiap kisah dimulai dari latar yang berbeda. Memulai kisah baru menggantikan kemajuanmu saat ini.
-		</p>
+		<div class="flex justify-end mb-6"><LangToggle /></div>
+		<h1 class="font-serif text-2xl text-stone-200 mb-2">{langStore.t.pickerTitle}</h1>
+		<p class="font-sans text-sm text-stone-500 mb-10">{langStore.t.pickerIntro}</p>
 		<ul class="space-y-2">
-			{#each stories as story}
+			{#each localizedStories() as story}
 				<li>
 					<button
 						onclick={() => begin(story.start)}
@@ -38,7 +40,7 @@
 			{/each}
 		</ul>
 		<a href="/" class="inline-block mt-10 text-[9px] uppercase tracking-[0.2em] text-stone-500 hover:text-stone-300">
-			kembali
+			{langStore.t.back}
 		</a>
 	</main>
 </div>

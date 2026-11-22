@@ -4,6 +4,9 @@
 	import { gameStore } from '$lib/stores/gameStore.svelte';
 	import { getPairBalance } from '$lib/engine/traitCalculator';
 	import { fade } from 'svelte/transition';
+	import { langStore } from '$lib/i18n/lang.svelte';
+	import { traitLabel } from '$lib/i18n/content';
+	import LangToggle from '$lib/components/LangToggle.svelte';
 	import traitsData from '$lib/data/traits.json';
 
 	onMount(() => {
@@ -15,7 +18,7 @@
 	const traitDefs = traitsData.traits;
 
 	function getTraitLabel(key: string): string {
-		return traitDefs.find(t => t.key === key)?.label ?? key;
+		return traitLabel(key, langStore.lang, traitDefs.find(t => t.key === key)?.label ?? key);
 	}
 
 	let profile = $derived(gameStore.currentProfile);
@@ -34,19 +37,20 @@
 </script>
 
 <svelte:head>
-	<title>Profil — Polytopo Human</title>
+	<title>{langStore.t.summaryTitle} — Polytopo Human</title>
 </svelte:head>
 
 <div class="min-h-screen bg-stone-950 text-stone-100 px-6 py-16" in:fade={{ duration: 700 }}>
 	<div class="max-w-xl mx-auto">
+		<div class="flex justify-end mb-6"><LangToggle /></div>
 
 		<!-- Profile identity -->
 		<div class="mb-20">
 			<p class="text-[9px] uppercase tracking-[0.2em] text-stone-700 mb-4 font-sans">
-				Polytopo Human · Profil Identitasmu
+				{langStore.t.summaryKicker}
 			</p>
 			<h1 class="font-serif text-5xl sm:text-6xl font-bold text-stone-100 mb-1 leading-tight">
-				{profile?.name ?? 'Sang Pencari'}
+				{profile?.name ?? langStore.t.fallbackProfile}
 			</h1>
 			<p class="text-xs text-stone-700 italic font-sans mb-10 tracking-wide">
 				{profile?.archetype ?? ''}
@@ -59,7 +63,7 @@
 		<!-- Trait value map -->
 		<div class="mb-20">
 			<p class="text-[9px] uppercase tracking-[0.2em] text-stone-700 mb-8 font-sans">
-				Peta Nilai
+				{langStore.t.valueMap}
 			</p>
 			<div class="space-y-9">
 				{#each pairBalances as { pair, leftWidth, dominant, scoreA, scoreB }}
@@ -101,15 +105,15 @@
 		<!-- Path replay -->
 		<div class="mb-20">
 			<p class="text-[9px] uppercase tracking-[0.2em] text-stone-700 mb-5 font-sans">
-				Jejak Perjalanan
+				{langStore.t.journey}
 			</p>
 			<p class="font-mono text-[11px] text-stone-700 leading-loose break-all">
 				{gameStore.session.pathTaken.filter(id => id !== 'END').join(' → ')}
 			</p>
 			<div class="mt-4 flex flex-wrap gap-x-6 gap-y-1 text-[10px] text-stone-800 font-sans">
-				<span>{gameStore.session.choicesMade.length} pilihan dibuat</span>
+				<span>{langStore.t.choicesMade(gameStore.session.choicesMade.length)}</span>
 				<span>
-					dimulai {new Date(gameStore.session.startedAt).toLocaleDateString('id-ID', {
+					{langStore.t.started} {new Date(gameStore.session.startedAt).toLocaleDateString(langStore.t.dateLocale, {
 						day: 'numeric',
 						month: 'long',
 						year: 'numeric'
@@ -117,7 +121,7 @@
 				</span>
 				{#if gameStore.session.completedAt}
 					<span>
-						selesai {new Date(gameStore.session.completedAt).toLocaleDateString('id-ID', {
+						{langStore.t.finished} {new Date(gameStore.session.completedAt).toLocaleDateString(langStore.t.dateLocale, {
 							day: 'numeric',
 							month: 'long',
 							year: 'numeric'
@@ -134,14 +138,14 @@
 				class="hover:text-stone-300 transition-colors duration-200
 					underline underline-offset-4 decoration-stone-800 hover:decoration-stone-600"
 			>
-				main lagi
+				{langStore.t.playAgain}
 			</button>
 			<button
 				onclick={downloadSession}
 				class="hover:text-stone-300 transition-colors duration-200
 					underline underline-offset-4 decoration-stone-800 hover:decoration-stone-600"
 			>
-				unduh data sesi
+				{langStore.t.download}
 			</button>
 		</div>
 

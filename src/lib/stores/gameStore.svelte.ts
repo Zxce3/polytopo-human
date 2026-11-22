@@ -4,6 +4,8 @@ import { GameEngine } from '$lib/engine/gameEngine';
 import type { GameSession, GameNode, ProfileDefinition } from '$lib/types/game';
 
 import storiesData from '$lib/data/stories.json';
+import { langStore } from '$lib/i18n/lang.svelte';
+import { localizeNode, localizeChoices, localizeProfile, localizeStory } from '$lib/i18n/content';
 import traitsData from '$lib/data/traits.json';
 
 const STORAGE_KEY = 'polytopo_session';
@@ -43,17 +45,21 @@ class GameStore {
 	}
 
 	get currentNode(): GameNode | undefined {
-		return engine.getNode(this.session.currentNodeId);
+		return localizeNode(engine.getNode(this.session.currentNodeId), langStore.lang);
 	}
 
 	get availableChoices() {
-		const node = this.currentNode;
+		const node = engine.getNode(this.session.currentNodeId);
 		if (!node) return [];
-		return engine.getAvailableChoices(node, this.session.traits);
+		return localizeChoices(
+			engine.getAvailableChoices(node, this.session.traits),
+			node.id,
+			langStore.lang
+		);
 	}
 
 	get currentProfile(): ProfileDefinition | null {
-		return engine.computeProfile(this.session.traits);
+		return localizeProfile(engine.computeProfile(this.session.traits), langStore.lang);
 	}
 
 	get isComplete(): boolean {
@@ -61,7 +67,7 @@ class GameStore {
 	}
 
 	makeChoice(choiceId: string): void {
-		const node = this.currentNode;
+		const node = engine.getNode(this.session.currentNodeId);
 		if (!node) return;
 		const choice = node.choices.find(c => c.id === choiceId);
 		if (!choice) return;
@@ -69,7 +75,7 @@ class GameStore {
 		this.session = engine.applyChoice(this.session, choice);
 
 		if (this.isComplete) {
-			const profile = this.currentProfile;
+			const profile = engine.computeProfile(this.session.traits);
 			this.session = {
 				...this.session,
 				completedAt: new Date().toISOString(),
@@ -89,7 +95,7 @@ class GameStore {
 	}
 
 	exportSession(): string {
-		const profile = this.currentProfile;
+		const profile = engine.computeProfile(this.session.traits);
 		return JSON.stringify(
 			engine.exportSession(this.session, profile?.name ?? 'Unknown'),
 			null,
@@ -99,5 +105,6 @@ class GameStore {
 }
 
 export const stories: { id: string; title: string; premise: string; start: string }[] = storiesData;
+export const localizedStories = () => stories.map((x) => localizeStory(x, langStore.lang));
 export const gameStore = new GameStore();
 export { engine };

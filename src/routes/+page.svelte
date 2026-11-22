@@ -1,12 +1,14 @@
 <script lang="ts">
 	import { gameStore } from '$lib/stores/gameStore.svelte';
-	import { STAGE_ORDER, STAGE_LABELS } from '$lib/engine/gameEngine';
+	import { STAGE_ORDER } from '$lib/engine/gameEngine';
 	import { fade } from 'svelte/transition';
+	import { langStore } from '$lib/i18n/lang.svelte';
+	import LangToggle from '$lib/components/LangToggle.svelte';
 </script>
 
 <svelte:head>
 	<title>Polytopo Human</title>
-	<meta name="description" content="Sebuah perjalanan naratif tentang identitas manusia." />
+	<meta name="description" content={langStore.t.pageDescription} />
 </svelte:head>
 
 <div class="min-h-screen bg-stone-950 text-stone-100 flex flex-col">
@@ -23,7 +25,7 @@
 							class="text-[9px] uppercase tracking-[0.2em] transition-colors duration-500
 								{active ? 'text-stone-300' : past ? 'text-stone-700' : 'text-stone-800'}"
 						>
-							{STAGE_LABELS[stage]}
+							{langStore.t.stages[stage]}
 						</span>
 						{#if i < STAGE_ORDER.length - 1}
 							<span class="mx-3 text-stone-800 text-xs">—</span>
@@ -94,21 +96,22 @@
 	<footer class="px-6 pb-7 select-none">
 		<div class="max-w-xl mx-auto flex justify-between items-center">
 			<span class="text-[9px] uppercase tracking-[0.2em] text-stone-500">
-				{gameStore.session.choicesMade.length} pilihan
+				{langStore.t.choicesCount(gameStore.session.choicesMade.length)}
 			</span>
+			<LangToggle />
 			<a
 				href="/stories"
 				class="text-[9px] uppercase tracking-[0.2em] text-stone-500
 					hover:text-stone-300 transition-colors duration-200"
 			>
-				pilih kisah
+				{langStore.t.chooseStory}
 			</a>
 			<button
 				onclick={() => gameStore.reset()}
 				class="text-[9px] uppercase tracking-[0.2em] text-stone-500
 					hover:text-stone-300 transition-colors duration-200"
 			>
-				ulang
+				{langStore.t.restart}
 			</button>
 		</div>
 	</footer>
